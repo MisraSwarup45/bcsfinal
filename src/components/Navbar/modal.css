@@ -1,0 +1,47 @@
+.modal--body{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.modal--headings{
+    margin: 10% auto auto auto;
+    width: 20%;
+    background: linear-gradient(180deg, #FFFF00 0%, #FFD400 100%);
+    border-radius: 25px 0px 0px 25px;
+}
+
+.top--title{
+    margin-top: 10%;
+}
+
+.bottom--title{
+    margin-bottom: 10%;
+}
+
+.heading--body{
+    margin: 15% 0% 15% 5%;
+    padding-left: 10%;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading--body:hover{
+    background-color: white;
+    border-radius: 10px 0px 0px 10px;
+    
+}
+
+.heading--body u{
+    text-decoration-color:#FFFF00;   
+}
+
+.modal--icons{
+    /* margin-left: 40%; */
+    display: inline;
+    margin-right: 10%;
+}

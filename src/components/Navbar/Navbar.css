@@ -1,0 +1,156 @@
+.navbar {
+    /* position: absolute; */
+    /* background: transparent; */
+}
+
+.navLink {
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    font-weight: 600;
+    border: none;
+}
+
+.navLink1 {
+    text-decoration: none;
+    color: #444444;
+}
+
+.navLink1:hover {
+    color: #444444;
+}
+
+.navLink:hover {
+    color: black;
+    border-bottom: 3px solid yellow;
+}
+
+.nav--Logo {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.nav-Logo {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-Logo:hover {
+    color: black;
+}
+
+.nav--Links {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.Login--Talk {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.Login--hover {
+    text-decoration: none;
+    color: black;
+}
+
+.Login--hover:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Cormorant';
+    font-style: normal;
+}
+
+.Lettalkborder {
+    border: 1px solid #000000;
+    border-radius: 35px;
+    background-color: #FFFF00;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Lettalkborder:hover {
+    text-decoration: none;
+    background-color: black;
+}
+
+.Let--Talk {
+    text-decoration: none;
+    color: black;
+    padding: 5%;
+}
+
+.Let--Talk:hover {
+    color: white;
+}
+
+.Modal--body {
+    display: flex;
+}
+
+.Modal--Titles {
+    width: 36%;
+    border-radius: 5px 0 0 5px;
+    background: linear-gradient(180deg, #FFFF00 0%, #FFD400 100%);
+}
+
+.item-contents-nav {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: auto; */
+    width: 64%;
+    align-items: center;
+
+}
+
+.div-nav {
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+
+.div-nav-item {
+    padding: 15px;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #444444;
+}
+
+
+.item-contents-nav {
+    /* display: none; */
+    color: white;
+}
+
+.mydiv:hover+.item-contents-nav {}
+
+.nav--grid--item {
+    padding: 3%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 65%;
+}
+
+a {
+    text-decoration: none;
+    color: #444444;
+}
+
+a:hover {
+    color: #444444;
+}

@@ -1,0 +1,26 @@
+#sponsors {
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.company-heading {
+    display: block;
+    text-align: center;
+
+}
+
+.company {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.companytags{
+    /* margin: 5px;
+    width: 320px;  */
+    filter: grayscale(100%);
+}
+
+.companytags:hover{
+    filter: grayscale(0%);
+}

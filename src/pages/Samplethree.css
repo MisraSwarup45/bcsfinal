@@ -1,0 +1,70 @@
+.photo-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    padding-left: 7%;
+    /* align-items: center; */
+}
+
+.photo-name {
+    margin-top: 200px;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 100%;
+    z-index: 1;
+    color: #000000;
+}
+
+.photo-desc {
+    font-family: 'Darker Grotesque';
+    margin-top: 30px;
+    width: 646px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    z-index: 1;
+    color: #000000;
+}
+
+.photo-btn {
+    width: 30%;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+    padding: 10px;
+    margin-top: 120px;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    z-index: 1;
+}
+
+.photo-inside {
+    height: 500px;
+    /* position: relative; */
+}
+
+.photo-into {
+    position: absolute;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}

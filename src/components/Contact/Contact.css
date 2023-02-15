@@ -1,0 +1,96 @@
+.Contact--us{
+    background-image: url(../../images/TOS_back.svg);
+    width: 100%;
+    height: 83vh;
+    margin-top: 3%;
+}
+
+.Contact--Heading{
+    display: flex;
+    /* padding-top: 5%; */
+}
+
+.Contact--Text{
+    width: 45%;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 75px;
+    padding-top: 12%;
+    padding-left: 12%;
+    color: #545454;
+}
+
+.Contact-text{
+    padding-top: 3%;
+    width: 80%;
+    margin: auto;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+}
+
+.contact--body{
+    padding-top: 7%;
+    padding-bottom: 15%;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    /* justify-content: space-between; */
+    grid-template-columns: auto auto auto;
+    gap: 5%;
+
+}
+
+.grid--content{
+    background-color: #F9F9F9;
+    padding: 8%;
+    border-radius: 20px;
+    
+}
+
+.contact--details{
+    padding-top: 20%;
+}
+
+.grid--content:hover{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.grid--heading{
+    font-family: 'cormorant';
+    font-size: 26px;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.grid--body{
+    padding-top: 15%;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+}
+
+.third{
+    padding-top: 60%;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    color: #BC312E;
+}
+
+.social-icons{
+    display: flex;
+    padding-top: 50%;
+    gap: 5%;
+    
+}
+
+.contact--details{
+    padding-top: 80%;
+}

@@ -1,0 +1,51 @@
+.leader-text {
+    display: flex;
+    text-align: center;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 80px;
+    color: #000000;
+}
+
+.leader-head {
+    display: flex;
+    justify-content: center;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    text-align: center;
+    color: #000000;
+}
+
+.grid-leader-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 30px;
+    justify-content: center;
+}
+
+.grid-leader-item {
+    padding-top: 100px;
+    margin: 20px;
+}
+
+.leader-headings {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 43px;
+    color: #000000;
+}
+
+.leader-image{
+    height: 200px;
+    
+}
+
+.leader-title-text{
+    font-size: 12px;
+}

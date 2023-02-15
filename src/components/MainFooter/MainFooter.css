@@ -1,0 +1,100 @@
+.main-hire {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hire {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.hire-title {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    color: #000000;
+}
+
+.hire-photo {
+    width: 80%;
+}
+
+.service-heading {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.service-btn {
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 35px;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 10px;
+    color: #000000;
+}
+
+.btn-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.btnrow-one {
+    display: flex;
+}
+
+.service-btn:hover {
+    cursor: pointer;
+    background: #FFFF00;
+}
+
+.form-input {
+    border: transparent;
+    outline: none;
+    border-bottom: 1px solid #000000;
+    margin: 20px;
+}
+.input1{
+    width: 42%;
+}
+
+.input3{
+    width: 92%;
+}
+
+.form-btn {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background: #FFFF00;
+    padding: 2%;
+    border: 1px solid #000000;
+    border-radius: 35px;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #000000;
+}
+
+.form-btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}

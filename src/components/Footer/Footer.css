@@ -1,0 +1,70 @@
+.Footer--bottom{
+    background-color: black;
+    font-family: 'Cormorant';
+}
+
+.inner--div{
+    color: white;
+    width: 50%;
+}
+.subs{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.Email{
+    width: 100%;
+    background: transparent;
+    border: 0px;
+    outline: none;
+    color: white;
+}
+
+.outer--div{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+}
+
+.lorem{
+    margin-top: 5%;
+    margin-right: 50%;
+}
+
+.nav--links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+
+.Line{
+    color: white;
+}
+
+.copyright{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.copy--text{
+    padding-bottom: 1.5%;
+}
+.copy--Links{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.copy-Links{
+    text-decoration: none;
+    color: white;
+}
+.copy-Links:hover{
+    color: white;
+}

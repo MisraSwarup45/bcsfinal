@@ -1,0 +1,25 @@
+.Header{
+    background-image: url(../../images/TOS_back.svg);
+    overflow: hidden;
+    /* height: 90vh; */
+    width: 100%;
+    background-repeat: no-repeat;
+    font-family: "Cormorant";
+    font-style: normal;
+}
+
+.Name{
+    font-size: 100px;
+    font-weight: 700;
+    color: grey;
+    margin: 9% 0 0 7%;
+}
+
+.Text{
+    width: 70%;
+    font-size: 24px;
+    margin: auto;
+    text-align: justify;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}

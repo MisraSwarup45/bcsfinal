@@ -1,0 +1,33 @@
+.Vision--content{
+    margin: auto;
+    width: 25%;
+    font-size: 70px;
+}
+
+
+.Grid--system{
+    font-size: 38px;
+    font-weight: 400;
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0 10%;
+    font-family: 'cormorant';
+    color: #BC312E;
+    padding-bottom: 10%;
+}
+
+.Grid--content{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    color: black;
+}
+
+.Vision--font{
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    text-align: center;
+}

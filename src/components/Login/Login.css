@@ -1,0 +1,116 @@
+.back--container{
+    margin-top: 5%;
+}
+
+.back--btn{
+    text-decoration: none;
+    color: black;
+    padding-left: 3%;
+}
+.back--btn:hover{
+    color: black;
+}
+
+.login--body{
+    border: 2px solid black;
+    margin: auto;
+    width: 50%;
+}
+
+.login--title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.btn--container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+.btn--body{
+    border: 2px solid black;
+    padding: 1% 4%;
+    border-radius: 36px;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+}
+.btn--body:hover{
+    background-color: #FFFF00;
+}
+
+.contact--container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 7% auto auto auto;
+}
+.login--email{
+    background: transparent;
+    border: 0px;
+    outline: none;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    color: #A2A2A2;
+    font-weight: 500;
+    font-size: 20px;
+    border-bottom: 2px solid #A2A2A2;
+    padding: 3% 6%;
+}
+
+.loginbtn--body{
+    width: 50%;
+    display: flex;
+    background-color: #FFFF00;
+    justify-content: center;
+    margin: 5% auto auto auto;
+    /* border: 2px solid black; */
+    padding: 1% 4%;
+    border-radius: 15px;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+}
+.login--btn{
+    text-decoration: none;
+    color: black;
+}
+.login--btn:hover{
+    color: black
+}
+
+.small--body{
+    color: #A2A2A2;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    margin: 3% auto auto auto;
+    width: fit-content;
+}
+
+.login--logos{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3% auto auto auto;
+}
+
+.login--bottom{
+    width: fit-content;
+    margin: 5% auto auto auto;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    color: #A2A2A2;
+    font-size: 20px;
+}
+.login--Signup{
+    color: #BC312E;
+}
