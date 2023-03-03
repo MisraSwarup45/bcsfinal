@@ -17,7 +17,7 @@
 }
 
 .icons:hover{
-    color: #FFFF00;
+    color: yellow;
 }
 
 .rotate{
@@ -32,7 +32,8 @@
     transform: translateY(-50%) rotate(90deg);
     font-family: 'Cormorant';
     font-weight: 200;
-    font-size: 20px;
+    font-size: 21px;
+    margin-bottom: 20px;
 }
 
 .home-bg{

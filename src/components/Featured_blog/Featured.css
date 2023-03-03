@@ -3,6 +3,10 @@
 .Featured{
     font-family: 'Darker Grotesque';
     font-style: normal;
+    margin-top: 5%;
+    padding-bottom: 3%;
+    background-color: #FFFBF2;
+    /* margin-bottom: 4%; */
 }
 .blog{
     display: flex;
@@ -10,9 +14,9 @@
     font-family: 'Cormorant';
     font-style: normal;
     font-size: 60px;
+    padding-bottom: 2%;
 }
 .Featured--content{
-    background-color: #FFFBF2;
     display: flex;
 }
 

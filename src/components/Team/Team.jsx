@@ -10,16 +10,13 @@ import vectorgrp from '../../images/vectorgrp.png';
 import pc from '../../images/pc.png';
 import rum from '../../images/rum1.png';
 import mengrp from '../../images/mengrp.png';
-import rect from '../../images/rect6.png';
 import menwin from '../../images/menwin.png';
 import girl from '../../images/girl.png';
-import recto from '../../images/recto.png';
 import teamrect from '../../images/teamrect.png';
 import teamimgs from '../../images/teamimgs.png';
 import Sponsors from '../Sponsors/Sponsors';
-import g1 from '../../images/g1.png';
-
 import Home from '../../pages/Datasets/Home';
+import Companies from '../../pages/Datasets/Companies';
 
 const Team = () => {
 
@@ -28,7 +25,6 @@ const Team = () => {
     });
 
     const [items, setItems] = useState(updatedItem);
-
     const [item, setItem] = useState('graphic');
 
 
@@ -39,6 +35,25 @@ const Team = () => {
         setItem(catItem);
         setItems(updatedItems);
     }
+
+    const updatedMedia = Companies.filter((currMedia)=>{
+        return currMedia.category === 'digital';
+    })
+
+    const [medias, setMedias] = useState(updatedMedia);
+    const [media, setMedia] = useState('digital');
+
+    const filterMedia = (catMedia) =>{
+        const updatedMedias = Companies.filter((currMedia)=>{
+            return currMedia.category === catMedia;
+        });
+        setMedia(catMedia);
+        setMedias(updatedMedias)
+    };
+
+    console.log(media);
+
+
 
     return (
         <>
@@ -52,7 +67,6 @@ const Team = () => {
             <div className='item-grid'>
                 {items.map((ele) => {
                     const { id, image, category, decs } = ele;
-
                     return (
                         <div className='item-grid-box'>
                             <div className='grid-item-img'><img className='img-grid' src={image}></img></div>
@@ -71,8 +85,20 @@ const Team = () => {
                     </div>
                     <div className='text-bg'>
                         <div>
-                            <div className='dot1' ><img className='dotimg' src={dot}></img>   Connect and collaborate with your internal and external teams.</div>
-                            <div className='dot2' ><img className='dotimg' src={dot}></img>   Whether you need design work done, content writing, animation or full production service, we have the right people for the job.</div>
+                            <div className='dot1' >
+                                <img className='dotimg' src={dot}></img>  
+                                <div className='team---text'>
+                                    Connect and collaborate with your internal and external teams.
+                                </div> 
+                            </div>
+                            <div className='dot2' >
+                                <div>
+                                <img className='dotimg' src={dot}></img>   
+                                </div>
+                                <div className='team---text'>
+                                    Whether you need design work done, content writing, animation or full production service, we have the right people for the job.
+                                </div>
+                            </div>
                         </div>
                         <div className='btnget'>
                             Get Demo
@@ -173,15 +199,22 @@ const Team = () => {
                 </div>
             </div>
             <div className='img-cre'>
-                <img className='bgrect' src={rect}></img>
+                {/* <img className='bgrect' src={rect}></img> */}
                 <div className='img-cre-div'>
                     <img className='manwin' src={menwin}></img>
                 </div>
-                {/* <div className='img-desc-div'>
-                    <div className='bgpara'>Join as Creator</div>
-                    <div className='bgtext'>Apply to join the top 3% exclusive creative community.</div>
-                    <div className='lets'><div className='letsgo'>Lets Go</div></div>
-                </div> */}
+                <div className='img--cre--text--div'>
+                    <div className='img--cre--text1'>
+                        Join as Creator
+                    </div>
+                    <div className='img--cre--text2'>
+                        Apply to join the top 3% exclusive creative community.
+                    </div>
+                    <div className='img--cre--btn'>
+                        Lets Go
+                    </div>
+                </div>
+
             </div>
 
             <div className='testimonials'>
@@ -195,33 +228,50 @@ const Team = () => {
             </div>
 
             <div className='photo-girl'>
-                <div><img className='girl-image' src={girl}></img></div>
-                <div className='girl-para'>Know how our creators are benefiting from the platform</div>
+                <div>
+                    <img className='girl-image' src={girl}></img>
+                </div>
+                <div>
+                    <div className='girl-para'>
+                        Know how our creators are benefiting from the platform
+                    </div>
+                    <div className='girl--btn'>
+                        <button className='girl-btn'>View Creators Profile</button>
+                    </div>
+                </div>
             </div>
 
             <div>
                 <div className='other-company-heading'>Our Other Companies</div>
                 <div className='other-company'>
-                    <div className='company-name activeStyle={{ color: "blue" }}'>BB Digital Media</div>
-                    <div className='company-name'>BB Creative Corner</div>
-                    <div className='company-name'>BB Corporate Connect</div>
-                    <div className='company-name'>BB Wedding</div>
-                    <div className='company-name'>BB Celebration</div>
-                    <div className='company-name'>BB Salon</div>
+                    <button onClick={() => filterMedia('digital') } className={media === "digital"? "activaa company-name": "company-name"}>BB Digital Media</button>
+                    <button onClick={() => filterMedia('creative')} className={media === "creative"? "activaa company-name": "company-name"}>BB Creative Corner</button>
+                    <button onClick={() => filterMedia('corporate')} className={media === "corporate"? "activaa company-name": "company-name"}>BB Corporate Connect</button>
+                    <button onClick={() => filterMedia('wedding')} className={media === "wedding"? "activaa company-name": "company-name"}>BB Wedding</button>
+                    <button onClick={() => filterMedia('celebration')} className={media === "celebration"? "activaa company-name": "company-name"}>BB Celebration</button>
+                    <button onClick={() => filterMedia('salon')} className={media === "salon"? "activaa company-name": "company-name"}>BB Salon</button>
                 </div>
             </div>
 
 
             <div className='cont-rect'>
-                <div className='recto-text'>
-                    Lorem ipsum dolor sit amet consectetur.
-                </div>
-                <div className='recto-para'>
-                    Lorem ipsum dolor sit amet consectetur. Egestas arcu eu a sit mauris tincidunt non pellentesque.
-                </div>
-                <div className='btngetn btn-rect'>
-                    Try Now
-                </div>
+                {medias.map((ele)=>{
+                    const {id, category, title, desc} = ele;
+                    return(
+                        <>
+                            <div className='recto-text'>
+                                {title}
+                            </div>
+                            <div className='recto-para'>
+                                {desc}
+                            </div>
+                            <div className='btngetn btn-rect'>
+                                Try Now
+                            </div>
+                        </>
+                    )
+                })}
+                
             </div>
         </>
     )

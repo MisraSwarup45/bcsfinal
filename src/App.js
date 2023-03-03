@@ -58,7 +58,7 @@ function App() {
         <Route path='/twod' element={<Twod />} />
         <Route path='/instructional' element={<Instructional />} />
         <Route path='/corporate' element={<Corporate />} />
-        <Route path='/' element={<AppPromo />} />
+        <Route path='/apppromo' element={<AppPromo />} />
         <Route path='/logo' element={<Logo />} />
         <Route path='/product' element={<Product />} />
         <Route path='/portrait' element={<Portrait />} />

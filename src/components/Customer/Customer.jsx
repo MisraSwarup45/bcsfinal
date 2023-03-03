@@ -16,6 +16,8 @@ import bg4 from '../../images/bg4.png';
 import phonebg from '../../images/phonebg.png';
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
+import MainFooter from '../MainFooter/MainFooter';
+import Featured from '../Featured_blog/Featured';
 
 const Customer = () => {
     const customer = [
@@ -108,11 +110,9 @@ const Customer = () => {
 
                     </div>
                 ))};
-
-
             </div>
-            {/* <MainFooter />
-            <Featured /> */}
+            <MainFooter />
+            <Featured />
             <Footer />
         </div>
     )

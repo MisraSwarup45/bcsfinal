@@ -19,11 +19,10 @@
     font-weight: 700;
     font-size: 56px;
     color: #545454;
-
 }
 
 .platform-texts {
-    width: 90%;
+    width: 80%;
     padding-left: 8%;
 }
 
@@ -35,7 +34,8 @@
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
+    padding-top: 3%;
+    font-size: 26px;
     letter-spacing: 0.02em;
     color: #000000;
 }

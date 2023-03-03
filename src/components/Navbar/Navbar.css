@@ -103,6 +103,7 @@
 
 .Modal--Titles {
     width: 36%;
+    /* padding: -20px; */
     border-radius: 5px 0 0 5px;
     background: linear-gradient(180deg, #FFFF00 0%, #FFD400 100%);
 }
@@ -144,6 +145,7 @@
     display: grid;
     grid-template-columns: auto auto;
     width: 65%;
+    height: 20px;
 }
 
 a {
@@ -153,4 +155,8 @@ a {
 
 a:hover {
     color: #444444;
+}
+
+.text-link{
+    padding: 10%;
 }

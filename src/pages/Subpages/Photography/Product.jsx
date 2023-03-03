@@ -7,9 +7,9 @@ import stepthree from '../../../images/stepthree.png';
 import knowimg from '../../../images/knowimage.png';
 import bgfooterpic from '../../../images/probg.png';
 import backimg from '../../../images/backimg.png';
-import pro1 from '../../../images/pro1.png';
-import pro2 from '../../../images/pro2.png';
-import pro3 from '../../../images/pro3.png';
+import pro1 from '../../../images/product1.png';
+import pro2 from '../../../images/product2.png';
+import pro3 from '../../../images/product3.png';
 import Navbar from '../../../components/Navbar/Navbar';
 import Footer from '../../../components/Footer/Footer';
 
@@ -60,18 +60,18 @@ const Sample = (props) => {
                 <div className='team-details'>
                     <div className='team-details-one'>
                         <img className='team-details-img' src={pro1}></img>
-                        <p className='team-details-heading'>Post a Project</p>
-                        <p className='team-details-desc'>Posting a projects free and simple. Fill out the title, description, and budget fields.</p>
+                        <p className='team-details-heading'>Fully compatible</p>
+                        <p className='team-details-desc'>Popular websites like BigCommerce, Shopify, and Amazon.com easily incorporate our photographs.</p>
                     </div>
                     <div className='team-details-one'>
                         <img className='team-details-img' src={pro2}></img>
-                        <p className='team-details-heading'>Choose Creators</p>
-                        <p className='team-details-desc'>No task is too small or too large. For projects of any size or budget, we have 1800+ creators available. No task is too difficult. We can complete it!</p>
+                        <p className='team-details-heading'>Expert editing</p>
+                        <p className='team-details-desc'>Each photo undergoes a rigorous editing procedure that includes colour correction and small flaw touch-ups.</p>
                     </div>
                     <div className='team-details-one'>
                         <img className='team-details-img' src={pro3}></img>
-                        <p className='team-details-heading'>Pay Safely</p>
-                        <p className='team-details-desc'>Using our milestone payment system, you should only pay for work once it has been finished and you are completely pleased with the quality.</p>
+                        <p className='team-details-heading'>Web & Print</p>
+                        <p className='team-details-desc'>Regardless of whether you want to use the photos online or in high-quality prints, each photograph is given in many image sizes.</p>
                     </div>
                 </div>
 
@@ -106,17 +106,6 @@ const Sample = (props) => {
                     </div>
                     <div className='ourwork-rect'>
                         <img className='photo-inside' src={backimg}></img>
-                        {/* <div class="grid-container">
-                        <div class="grid-item">1</div>
-                        <div class="grid-item">2</div>
-                        <div class="grid-item">3</div>
-                        <div class="grid-item">4</div>
-                        <div class="grid-item">5</div>
-                        <div class="grid-item">6</div>
-                        <div class="grid-item">7</div>
-                        <div class="grid-item">8</div>
-                        <div class="grid-item">9</div>
-                    </div> */}
                     </div>
                     <div className='our-work'>
                         <div className='our-company'>

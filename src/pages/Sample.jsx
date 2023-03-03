@@ -5,7 +5,6 @@ import stepone from '../images/stepone.png';
 import steptwo from '../images/steptwo.png';
 import stepthree from '../images/stepthree.png';
 import knowimg from '../images/knowimage.png';
-import bgfooterpic from '../images/photobg.png';
 import insiderect from '../images/insiderect.png';
 
 

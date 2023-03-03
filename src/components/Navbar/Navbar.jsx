@@ -88,7 +88,7 @@ const Nav = () => {
               {items.map((ele) => {
                 const { text, cat, link } = ele;
                 return (
-                  <a href={link}>{text}</a>
+                  <a className='text-link' href={link}>{text}</a>
                 )
               })}
             </div>
@@ -121,7 +121,7 @@ const Nav = () => {
               {item.map((ele) => {
                 const { text, cat, link } = ele;
                 return (
-                  <a href={link}>{text}</a>
+                  <a className='text-link' href={link}>{text}</a>
                 )
               })}
             </div>

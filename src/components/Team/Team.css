@@ -13,13 +13,14 @@
     line-height: 78px;
     color: #000000;
     padding-left: 7%;
+    width: 65%;
 }
 
 .dot1 {
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 22px;
     line-height: 38px;
     display: flex;
     align-items: center;
@@ -32,25 +33,40 @@
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 22px;
     line-height: 38px;
     color: #000000;
     padding-left: 7%;
+    padding-right: 10%;
     padding-top: 5%;
+    display: flex;
+
 }
 
 .dotimg {
     padding: 10px;
 }
 
+.team---text{
+    padding-left: 3%;
+}
+
 .btnget {
+    font-family: 'Cormorant';
+    font-style: normal;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 12px;
     gap: 10px;
+    font-size: 32px;
+    font-weight: 800;
     width: 291px;
-    height: 69px;
+    height: 75px;
     background: #FFFF00;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
     border: 1px solid #000000;
     border-radius: 35px;
     margin-left: 7%;
@@ -84,12 +100,13 @@
 
 .teamimgs {
     position: absolute;
+
 }
 
 .team-img {
-    height: 350px;
-    margin-top: -180%;
-    margin-left: 350%;
+    height: 550px;
+    margin-top: -190%;
+    margin-left: 270%;
 }
 
 #realteam {
@@ -120,26 +137,24 @@
 
 .para {
     position: absolute;
-    width: 450px;
+    width: 490px;
     height: 66px;
     left: 135px;
     top: 450px;
-
     font-family: 'Darker Grotesque';
     font-style: normal;
-    font-weight: 200;
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 20px;
     line-height: 33px;
     display: flex;
     align-items: center;
-
     color: #000000;
-
 }
 
 .pointimgs {
     display: flex;
     width: 48%;
+    padding-left: 5%;
 }
 
 .line {
@@ -151,32 +166,31 @@
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 43px;
     display: flex;
     align-items: center;
-
     color: #000000;
-
 }
 
 .red {
     color: red;
-    padding: 5px;
+    padding-left: 3px;
+    padding-right: 2px;
 }
 
 .desc {
     position: absolute;
-    width: 429px;
+    width: 450px;
     height: 35px;
     left: 180px;
     top: 650px;
 
     font-family: 'Darker Grotesque';
     font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 35px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 45px;
     display: flex;
     align-items: center;
 
@@ -198,6 +212,8 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
+    margin: auto;
+    width: 90%;
 }
 
 .mywork {
@@ -258,6 +274,7 @@
     filter: drop-shadow(-10px 0px 20px rgba(0, 0, 0, 0.15));
     border-radius: 12px;
     left: -35%;
+    margin-right: 5%;
 }
 
 .point {
@@ -285,8 +302,8 @@
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 38px;
+    font-size: 26px;
+    line-height: 35px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -326,9 +343,13 @@
 }
 
 .teamtext {
-    margin-top: -7%;
+    margin-top: -2%;
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: auto auto;
+}
+
+.box{
+    align-items: center;
 }
 
 
@@ -360,39 +381,78 @@
 }
 
 .bgrect {
-    /* position: absolute; */
     width: 100%;
     margin-top: 30%;
 }
 
 .manwin {
-    position: absolute;
-    width: 40%;
-    left: 145px;
-    margin-top: 20%;
+    width: 65%;
+    transform: translate(30%, -15%);
+}
+
+.img-cre {
+    margin-top: 15%;
+    display: flex;
+    background-image: url('../../images/rect6.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img--cre--text1{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-size: 66px;
+    font-weight: 600;
+    color: #BC312E;
+    width: 90%;
+}
+
+.img--cre--text2{
+    margin-top: 3%;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 600;
+    width: 60%;
+}
+
+.img--cre--text--div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 2%;
+}
+
+.img--cre--btn{
+    border: 1px solid black;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin-top: 12%;
+    margin-left: 50%;
+    padding: 1% 0;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.25);
 }
 
 .bgpara {
     font-family: 'Cormorant';
-    /* z-index: 1; */
     font-style: normal;
     font-weight: 600;
     font-size: 66px;
-    /* line-height: 116px; */
     color: #BC312E;
 }
-
-.img-cre {
-    display: flex;
-}
-
 .bgtext {
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 43px;
-
     color: #000000;
 }
 
@@ -455,12 +515,27 @@
 
 .photo-girl {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    gap: 3%;
+    width: 80%;
+    margin: auto;
 }
 
-.girl-image {
-    /* padding: 10%; */
+.girl--btn{
+    margin-top: 15%;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid #000000;
+    box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.25);
+    width: 44%;
+}
+.girl-btn{
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 1% 5%;
+    background-color: #FFFFFF;
+
 }
 
 .categories {
@@ -485,23 +560,22 @@
     position: relative;
 }
 
-
-
 .img-grid-desc {
     position: absolute;
-    margin-top: -13%;
-    margin-left: 11.5%;
-    font-size: 25px;
+    width: 45%;
+    font-family: 'Darker Grotesque';
+    text-align: start;
+    font-weight: 500;
+    font-size: 28px;
     background: #FFFF00;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 0.5%;
+    left: 21%;
+    top: 70%;
 }
 
 .img-grid {
     height: 200px;
-}
-
-.cat-items {
-    /* padding: 5%; */
 }
 
 .girl-para {
@@ -509,35 +583,32 @@
     font-family: 'Cormorant';
     font-style: normal;
     font-weight: 700;
-    font-size: 64px;
+    font-size: 58px;
     line-height: 78px;
-    padding: 5%;
+    /* padding: 5%; */
     color: #000000;
+    margin-top: 20%;
+}
+.girl-image{
+    /* width: 150%; */
 }
 
-.btn-new {
-    /* margin-top: 60%; */
-}
 
 .other-company-heading {
-
     text-align: center;
-
-
     font-family: 'Cormorant';
     font-style: normal;
     font-weight: 300;
     font-size: 64px;
     line-height: 78px;
-
-
     text-align: center;
-
+    /* margin-bottom: 3%; */
     color: #000000;
-
 }
 
 .other-company {
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -545,25 +616,31 @@
 }
 
 .company-name {
+    border: none;
+    background: none;
     width: 175px;
     height: 38px;
     left: 200px;
     top: 15px;
     font-family: 'Darker Grotesque';
     font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
+    font-weight: 650;
+    font-size: 18px;
     line-height: 38px;
     text-align: center;
     color: #000000;
+    margin-bottom: 3%;
 }
 
+.activaa{
+    background-color: #FFFFBA;
+}
 
 .recto-text {
     font-family: 'Cormorant';
     font-style: normal;
     font-weight: 700;
-    font-size: 62px;
+    font-size: 56px;
     color: #545454;
     width: 50%;
 }
@@ -577,7 +654,7 @@
     line-height: 38px;
     letter-spacing: 0.02em;
     text-transform: lowercase;
-    padding-top: 5%;
+    padding-top: 1%;
     color: #000000;
 
 }
@@ -587,7 +664,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 5%;
+    padding-top: 2%;
     padding-left: 7%;
 }
 
@@ -600,22 +677,22 @@
     text-align: center;
     width: 20%;
     padding: 1%;
-    margin-top: 10%;
+    margin-top: 4%;
     color: #000000;
     background: #FFFF00;
     border: 1px solid #000000;
     border-radius: 35px;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
-.btn-rect:hover{
+.btn-rect:hover {
     cursor: pointer;
     background-color: black;
     color: white;
 }
 
 .cat-items {
-    background: none; 
+    background: none;
     border: none;
     font-size: 30px;
     /* padding: 5% 5% 5% 0.5%; */
@@ -632,7 +709,7 @@
     font-weight: 600;
 }
 
-.activa{
+.activa {
     /* background-image: url(../../images/team_names.svg); */
     background: yellow;
     border-radius: 50%;
@@ -641,6 +718,3 @@
     text-align: center;
     color: black;
 }
-
-
-
