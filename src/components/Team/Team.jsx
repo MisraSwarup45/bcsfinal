@@ -36,15 +36,15 @@ const Team = () => {
         setItems(updatedItems);
     }
 
-    const updatedMedia = Companies.filter((currMedia)=>{
+    const updatedMedia = Companies.filter((currMedia) => {
         return currMedia.category === 'digital';
     })
 
     const [medias, setMedias] = useState(updatedMedia);
     const [media, setMedia] = useState('digital');
 
-    const filterMedia = (catMedia) =>{
-        const updatedMedias = Companies.filter((currMedia)=>{
+    const filterMedia = (catMedia) => {
+        const updatedMedias = Companies.filter((currMedia) => {
             return currMedia.category === catMedia;
         });
         setMedia(catMedia);
@@ -57,12 +57,13 @@ const Team = () => {
 
     return (
         <>
+            <div className='services'>Our Services</div>
             <div className='categories'>
-                <button onClick={() => filterItem('graphic')} className = {item === 'graphic'? "activa cat-items" : " cat-items" } >Graphic Design</button>
-                <button onClick={() => filterItem('cinema')} className = {item === 'cinema'? "activa cat-items" : " cat-items"}>Cinematography</button>
-                <button onClick={() => filterItem('photo')} className = {item === 'photo'? "activa cat-items" : " cat-items"}>Photography</button>
-                <button onClick={() => filterItem('content')} className = {item === 'content'? "activa cat-items" : " cat-items"}>Content Writing</button>
-                <button onClick={() => filterItem('space')} className = {item === 'space'? "activa cat-items" : " cat-items"}>Space & Studio</button>
+                <button onClick={() => filterItem('graphic')} className={item === 'graphic' ? "activa cat-items" : " cat-items"} >Gr<span>aphic Des</span>ign</button>
+                <button onClick={() => filterItem('cinema')} className={item === 'cinema' ? "activa cat-items" : " cat-items"}>Cin<span>ematogra</span>phy</button>
+                <button onClick={() => filterItem('photo')} className={item === 'photo' ? "activa cat-items" : " cat-items"}>Ph<span>otograp</span>hy</button>
+                <button onClick={() => filterItem('content')} className={item === 'content' ? "activa cat-items" : " cat-items"}>Con<span>tent Wri</span>ting</button>
+                <button onClick={() => filterItem('space')} className={item === 'space' ? "activa cat-items" : " cat-items"}>Spa<span>ce & Stu</span>dio</button>
             </div>
             <div className='item-grid'>
                 {items.map((ele) => {
@@ -86,23 +87,23 @@ const Team = () => {
                     <div className='text-bg'>
                         <div>
                             <div className='dot1' >
-                                <img className='dotimg' src={dot}></img>  
+                                <img className='dotimg' src={dot}></img>
                                 <div className='team---text'>
                                     Connect and collaborate with your internal and external teams.
-                                </div> 
+                                </div>
                             </div>
                             <div className='dot2' >
                                 <div>
-                                <img className='dotimg' src={dot}></img>   
+                                    <img className='dotimg' src={dot}></img>
                                 </div>
                                 <div className='team---text'>
                                     Whether you need design work done, content writing, animation or full production service, we have the right people for the job.
                                 </div>
                             </div>
                         </div>
-                        <div className='btnget'>
+                        <button className='btnget'>
                             Get Demo
-                        </div>
+                        </button>
                         <div className='teamimgs'>
                             <img className='team-img' src={teamimgs}></img>
                         </div>
@@ -120,13 +121,17 @@ const Team = () => {
                 <p className='desc'>Share your needs with us, and we'll take care of the rest. <br />We’re always available.<br />Best in class quality at affordable prices</p>
             </div>
             <div>
-                <h1 className='heading'>How we do it</h1>
-                <img src={rect1}></img>
+
+                    <h1 className='heading'>How we do it</h1>
+                <div className="rectangles">
+                    <img className='rectangle1' src={rect1}></img>
+                    <br />
+                    {/* <br></br>
                 <br></br>
-                <br></br>
-                <br></br>
-                <img src={rect2}></img>
-                <br></br><br></br><br></br>
+            <br></br> */}
+                    <img className='rectangle2' src={rect2}></img>
+                    {/* <br></br><br></br><br></br> */}
+                </div>
                 <div className='work'>
                     <div className='mywork'>
                         <img className='ellipse' src={ellipse}></img>
@@ -210,9 +215,9 @@ const Team = () => {
                     <div className='img--cre--text2'>
                         Apply to join the top 3% exclusive creative community.
                     </div>
-                    <div className='img--cre--btn'>
+                    <button className='img--cre--btn'>
                         Lets Go
-                    </div>
+                    </button>
                 </div>
 
             </div>
@@ -244,20 +249,20 @@ const Team = () => {
             <div>
                 <div className='other-company-heading'>Our Other Companies</div>
                 <div className='other-company'>
-                    <button onClick={() => filterMedia('digital') } className={media === "digital"? "activaa company-name": "company-name"}>BB Digital Media</button>
-                    <button onClick={() => filterMedia('creative')} className={media === "creative"? "activaa company-name": "company-name"}>BB Creative Corner</button>
-                    <button onClick={() => filterMedia('corporate')} className={media === "corporate"? "activaa company-name": "company-name"}>BB Corporate Connect</button>
-                    <button onClick={() => filterMedia('wedding')} className={media === "wedding"? "activaa company-name": "company-name"}>BB Wedding</button>
-                    <button onClick={() => filterMedia('celebration')} className={media === "celebration"? "activaa company-name": "company-name"}>BB Celebration</button>
-                    <button onClick={() => filterMedia('salon')} className={media === "salon"? "activaa company-name": "company-name"}>BB Salon</button>
+                    <button onClick={() => filterMedia('digital')} className={media === "digital" ? "activaa company-name" : "company-name"}>BB Digital Media</button>
+                    <button onClick={() => filterMedia('creative')} className={media === "creative" ? "activaa company-name" : "company-name"}>BB Creative Corner</button>
+                    <button onClick={() => filterMedia('corporate')} className={media === "corporate" ? "activaa company-name" : "company-name"}>BB Corporate Connect</button>
+                    <button onClick={() => filterMedia('wedding')} className={media === "wedding" ? "activaa company-name" : "company-name"}>BB Wedding</button>
+                    <button onClick={() => filterMedia('celebration')} className={media === "celebration" ? "activaa company-name" : "company-name"}>BB Celebration</button>
+                    <button onClick={() => filterMedia('salon')} className={media === "salon" ? "activaa company-name" : "company-name"}>BB Salon</button>
                 </div>
             </div>
 
 
             <div className='cont-rect'>
-                {medias.map((ele)=>{
-                    const {id, category, title, desc} = ele;
-                    return(
+                {medias.map((ele) => {
+                    const { id, category, title, desc } = ele;
+                    return (
                         <>
                             <div className='recto-text'>
                                 {title}
@@ -271,7 +276,7 @@ const Team = () => {
                         </>
                     )
                 })}
-                
+
             </div>
         </>
     )

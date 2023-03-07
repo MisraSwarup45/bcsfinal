@@ -1,70 +1,100 @@
-.Footer--bottom{
+.Footer--bottom {
     background-color: black;
     font-family: 'Cormorant';
 }
 
-.inner--div{
+.inner--div {
     color: white;
     width: 50%;
 }
-.subs{
+
+.subs {
     margin-top: 5%;
     margin-left: 5%;
 }
 
-.Email{
-    width: 100%;
+.email-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #a1a1aa;
+
+}
+
+.Email {
+    width: 475px;
     background: transparent;
     border: 0px;
     outline: none;
     color: white;
+    padding: 25px 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
 }
 
-.outer--div{
+.submit {
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #a1a1aa;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.outer--div {
     display: flex;
     /* flex-direction: row; */
     justify-content: space-between;
 }
 
-.lorem{
+.footer--heading h1 {
+    width: 100%;
     margin-top: 5%;
-    margin-right: 50%;
+    /* margin-right: 50%; */
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 78px;
 }
 
-.nav--links{
+.nav--links {
     display: flex;
     justify-content: space-between;
     margin-top: 10%;
     margin-right: 10%;
     font-size: 20px;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     color: white;
 }
 
-.Line{
+.Line {
     color: white;
 }
 
-.copyright{
+.copyright {
     color: white;
     display: flex;
     justify-content: space-between;
 }
-.copy--text{
+
+.copy--text {
     padding-bottom: 1.5%;
 }
-.copy--Links{
+
+.copy--Links {
     display: flex;
     justify-content: space-between;
     width: 60%;
 }
 
-.copy-Links{
+.copy-Links {
     text-decoration: none;
     color: white;
 }
-.copy-Links:hover{
+
+.copy-Links:hover {
     color: white;
 }

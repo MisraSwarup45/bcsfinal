@@ -8,7 +8,7 @@ const dataSlider = [
         id: uuidv4(),
         title: "Wade Warner",
         image: img1,
-        subTitle: "Lorem ipsum dolor sit amet consectetur. Aliquam pretium sed phasellus neque in convallis amet. Adipiscing egestas in nulla vulputate orci purus eget posuere sit. Vitae dolor dictum enim porta non. Lacinia ullamcorper quisque a nisl senectus est quam tincidunt arcu."
+        subTitle: "A fantastic team of passionate designers and UX specialists at the top of their game. I've had the pleasure of  getting my work done with them and these guys are game-changers for any tech platform."
     },
     {
         id: uuidv4(),

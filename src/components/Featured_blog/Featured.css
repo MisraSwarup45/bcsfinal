@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap');
 
-.Featured{
+.Featured {
     font-family: 'Darker Grotesque';
     font-style: normal;
     margin-top: 5%;
-    padding-bottom: 3%;
-    background-color: #FFFBF2;
     /* margin-bottom: 4%; */
 }
-.blog{
+
+.blog {
     display: flex;
     justify-content: center;
     font-family: 'Cormorant';
@@ -16,71 +15,104 @@
     font-size: 60px;
     padding-bottom: 2%;
 }
-.Featured--content{
+
+.Featured--content {
+    background-color: #FFFBF2;
     display: flex;
+
+    padding: 68px;
+
 }
 
-.featured--block--content{
+.featured--block--content {
+    width: 100%;
     margin: 2%;
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
 }
 
-.image1 p{
+.featured--block--content h3 {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 133.1%;
+}
+
+.image1 p {
     font-size: 26px;
     font-weight: 500;
 }
 
-.image1-link{
+.image1-link {
     display: flex;
     justify-content: flex-end;
     text-decoration: none;
     color: black;
     margin-top: 5%;
     margin-right: 5%;
+    font-weight: 600;
+font-size: 20px;
+line-height: 27px;
 }
-.image1-link:hover{
+
+.image1-link:hover {
     text-decoration: none;
     color: black;
 }
 
-.image1 small{
+.image1 small {
     color: #686868;
     padding-bottom: 2%;
     padding-left: 2%;
 }
 
-.image1{
+.image1 {
     background-color: white;
 }
 
-.featured--button{
+.featured--button {
     display: flex;
     text-decoration: none;
-    color: black;
+    /* color: black; */
     background-color: yellow;
-    margin: 25%;
+    /* margin: 25%; */
     justify-content: center;
-    width: 40%;
-    padding: 2%;
+    /* width: 40%; */
+    /* padding: 2%; */
     border-radius: 35px;
     border: 1px solid black;
+    margin-top: 90px;
 }
 
-.featured--button:hover{
-    background-color:  black;
+.featured--button:hover {
+    background-color: black;
     color: white;
 }
 
-.featured--button-LINK{
+.featured--button-LINK {
+    width: 100%;
+    height: 100%;
     text-decoration: none;
     color: black;
     font-size: 24px;
+    line-height: 100%;
     font-weight: 600;
+    padding: 15px 80px;
 }
 
-.featured--button-LINK:hover{
+.featured--button-LINK:hover {
     text-decoration: none;
     color: white;
 }
 
+.container p {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43px;
+}
+
+.container small {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+}

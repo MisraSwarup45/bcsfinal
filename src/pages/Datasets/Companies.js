@@ -2,8 +2,8 @@ const Companies = [
     {
         id: 1,
         category: "digital",
-        title: "Lorem ipsum dolor sitamet consectetur.",
-        desc: "Lorem ipsum dolor sit amet consectetur. Egestas arcu eu a sit mauris tincidunt non pellentesque."
+        title: "Our Special Monthly Subscription",
+        desc: "Special Subscription for premium users with up to a month of few free trails"
     },
     {
         id: 2,

@@ -32,9 +32,9 @@ const Home = () => {
                     </div>
                     <button className='getstarted'>Get Started</button>
                 </div>
-                <div className='services'>Our Services</div>
+                
             </div>
-            <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+            
             <Team />
             <MainFooter />
             <Featured />

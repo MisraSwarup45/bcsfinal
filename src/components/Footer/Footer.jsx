@@ -6,8 +6,8 @@ function Footer() {
     return <footer className='Footer--bottom'>
         <div className='outer--div container'>
             <div className='inner--div'>
-                <div className='lorem'>
-                    <h1>Lorem ipsum dolor sit Lorem</h1>
+                <div className='footer--heading'>
+                    <h1>We produce enjoyable digital experiences for users.</h1>
                 </div>
                 <div className='nav--links'>
                     <Link to='/' className='nav-link'>Platform</Link>
@@ -22,9 +22,10 @@ function Footer() {
                     <h1>Subscribe</h1>
                     <small>Join our community</small>
                 </div>
-                <div className='subs'>
+                <div className='subs email-form'>
                     <input className='Email' type="text" placeholder='Email Address' />
-                    <hr />
+                    <input className='submit' type="submit" value=">" />
+                    {/* <hr /> */}
                 </div>
             </div>
         </div>

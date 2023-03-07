@@ -4,27 +4,42 @@
     display: flex;
     flex-direction: row;
 }
-
+.services {
+    /* position: absolute; */
+    /* width: 318px;
+    height: 78px; */
+    /* left: 40%;
+    top: 100%; */
+    margin-top: 233px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 78px;
+    color: #000000;
+}
 .text {
     font-family: 'Cormorant';
     font-style: normal;
     font-weight: 500;
-    font-size: 44px;
+    font-size: 64px;
     line-height: 78px;
     color: #000000;
     padding-left: 7%;
-    width: 65%;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 .dot1 {
-    font-family: 'Darker Grotesque';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 38px;
+    
     display: flex;
     align-items: center;
-    color: #000000;
+    
     padding-left: 7%;
     padding-top: 5%;
 }
@@ -47,7 +62,13 @@
     padding: 10px;
 }
 
-.team---text{
+.team---text {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    color: #000000;
     padding-left: 3%;
 }
 
@@ -56,21 +77,22 @@
     font-style: normal;
     align-items: center;
     text-align: center;
-    padding: 12px;
-    gap: 10px;
+    padding: 12px 80px;
+    /* gap: 10px; */
     font-size: 32px;
     font-weight: 800;
-    width: 291px;
-    height: 75px;
+    /* width: 291px;
+    height: 75px; */
     background: #FFFF00;
     font-family: 'Cormorant';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    line-height: 39px;
     border: 1px solid #000000;
     border-radius: 35px;
-    margin-left: 7%;
+    margin-left: 16%;
     margin-top: 10%;
+    margin-bottom: 3%;
 }
 
 .btnget:hover {
@@ -199,15 +221,21 @@
 
 .heading {
     display: block;
-    margin-top: 20px;
+    margin-bottom: 0;
     text-align: center;
     font-family: 'Cormorant';
     font-style: normal;
     font-weight: 300;
     font-size: 64px;
-    line-height: 78px;
+    line-height: 0px;
+    margin-top: 172px;
 }
-
+.rectangle1{
+    margin-bottom: 20px;
+}
+.rectangle2{
+    margin-bottom: 44px;
+}
 .work {
     display: flex;
     justify-content: center;
@@ -279,7 +307,7 @@
 
 .point {
     /* margin-top: 130px; */
-    margin-top: 15%;
+    margin-top: 80px;
     display: flex;
 }
 
@@ -348,7 +376,7 @@
     grid-template-columns: auto auto;
 }
 
-.box{
+.box {
     align-items: center;
 }
 
@@ -399,7 +427,7 @@
     background-position: center;
 }
 
-.img--cre--text1{
+.img--cre--text1 {
     font-family: 'Cormorant';
     font-style: normal;
     font-size: 66px;
@@ -408,7 +436,7 @@
     width: 90%;
 }
 
-.img--cre--text2{
+.img--cre--text2 {
     margin-top: 3%;
     font-family: 'Darker Grotesque';
     font-style: normal;
@@ -417,14 +445,14 @@
     width: 60%;
 }
 
-.img--cre--text--div{
+.img--cre--text--div {
     display: flex;
     flex-direction: column;
     width: 50%;
     margin-top: 2%;
 }
 
-.img--cre--btn{
+.img--cre--btn {
     border: 1px solid black;
     font-family: 'Cormorant';
     font-style: normal;
@@ -439,7 +467,9 @@
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.25);
 }
-
+.img--cre--btn:hover{
+    box-shadow: none;
+}
 .bgpara {
     font-family: 'Cormorant';
     font-style: normal;
@@ -447,6 +477,7 @@
     font-size: 66px;
     color: #BC312E;
 }
+
 .bgtext {
     font-family: 'Darker Grotesque';
     font-style: normal;
@@ -485,8 +516,11 @@
 }
 
 .testimonials-cointainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 60%;
-    padding: 7%;
+    padding-left: 135px;
 }
 
 .testi {
@@ -496,9 +530,11 @@
     font-size: 40px;
     line-height: 48px;
     color: #000000;
+    margin-bottom: 50px;
 }
 
 .testipara {
+    width: 75%;
     font-family: 'Cormorant';
     font-style: normal;
     font-weight: 700;
@@ -521,21 +557,25 @@
     margin: auto;
 }
 
-.girl--btn{
+.girl--btn {
     margin-top: 15%;
-    background: rgba(255, 255, 255, 0.4);
-    border: 1px solid #000000;
-    box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.25);
-    width: 44%;
+    /* width: 44%; */
 }
-.girl-btn{
+
+.girl-btn {
     font-family: 'Cormorant';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     padding: 1% 5%;
     background-color: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.4);
 
+}
+.girl-btn:hover{
+    box-shadow: none;
 }
 
 .categories {
@@ -589,7 +629,8 @@
     color: #000000;
     margin-top: 20%;
 }
-.girl-image{
+
+.girl-image {
     /* width: 150%; */
 }
 
@@ -602,6 +643,7 @@
     font-size: 64px;
     line-height: 78px;
     text-align: center;
+    margin-top: 50px;
     /* margin-bottom: 3%; */
     color: #000000;
 }
@@ -632,17 +674,20 @@
     margin-bottom: 3%;
 }
 
-.activaa{
+.activaa {
     background-color: #FFFFBA;
 }
 
 .recto-text {
+    
     font-family: 'Cormorant';
     font-style: normal;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 72px;
+    line-height: 100%;
     color: #545454;
-    width: 50%;
+    width: 80%;
+    margin: 80px 0;
 }
 
 .recto-para {
@@ -711,10 +756,15 @@
 
 .activa {
     /* background-image: url(../../images/team_names.svg); */
+    
     background: yellow;
     border-radius: 50%;
     background-repeat: no-repeat;
     overflow: visible;
     text-align: center;
     color: black;
+}
+
+.activa span {
+    color: #BC312E;
 }
