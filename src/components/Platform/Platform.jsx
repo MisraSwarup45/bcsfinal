@@ -3,7 +3,8 @@ import './Platform.css';
 import girlpen from '../../images/girlpen.png';
 import Sponsors from '../Sponsors/Sponsors';
 import platformteam from '../../images/platformteam.png';
-import globe from '../../images/globe.png';
+import globe from '../../images/globe1.png';
+import shadow from '../../images/shadow.png'
 import arrow from '../../images/arrow.png';
 import createteam from '../../images/creativityteam.png';
 import bag from '../../images/bagteam.png';
@@ -29,9 +30,9 @@ const Platform = () => {
                         <div className='platform-text'>
                             With the help of our innovative ideas, services, and solutions, we help startups and businesses develop more quickly and generate more sales and money.
                         </div>
-                        <div className='platform-btn'>
+                        <button className='platform-btn'>
                             Get Started
-                        </div>
+                        </button>
                     </div>
                     <div className='girlpen'>
                         <img className='platform-girlpen' src={girlpen}></img>
@@ -70,6 +71,7 @@ const Platform = () => {
                                 To assist you in finding and assembling a production team that can produce top-notch content anywhere in the globe, we have established a worldwide network of Creators.
                             </div>
                             <div><img className='globe' src={globe}></img></div>
+                            <div className="globe-shadow"><img src={shadow} alt="" ></img></div>
                             <div className='globe-text'>Do you need a creative service in the remotest corner in the world? No issues! 160 nations are included in our creative network.</div>
 
                         </div>

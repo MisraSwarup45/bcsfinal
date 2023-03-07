@@ -14,10 +14,15 @@
 }
 
 .platform-heading {
+    width: 120%;
     font-family: 'Cormorant';
     font-style: normal;
     font-weight: 700;
-    font-size: 56px;
+    line-height: 100%;
+    /* or 76px */
+
+    letter-spacing: -0.02em;
+    font-size: 76px;
     color: #545454;
 }
 
@@ -31,11 +36,14 @@
 }
 
 .platform-text {
+    width: 120%;
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 500;
-    padding-top: 3%;
-    font-size: 26px;
+    padding-top: 46px;
+    font-size: 32px;
+    line-height: 43px;
+
     letter-spacing: 0.02em;
     color: #000000;
 }
@@ -46,14 +54,16 @@
 }
 
 .platform-btn {
-    width: 323px;
-    height: 80px;
+    /* width: 323px;
+    height: 80px; */
     margin-top: 15%;
     box-sizing: border-box;
     font-family: 'Cormorant';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
+    line-height: 100%;
+    padding: 20px 88px;
     display: flex;
     color: #000000;
     border: 1px solid #000000;
@@ -64,13 +74,25 @@
     justify-content: center;
 }
 
-.platform-team {
-    display: flex;
-    flex-direction: row;
+.platform-btn:hover {
+    box-shadow: none;
 }
 
+.platform-team {
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.platform-image-area{
+    width: 100%;
+}
+.platform-text-area{
+    margin-left: 63px;
+
+}
 .platform-team-image {
-    width: 90%;
+    width: 100%;
 }
 
 .platform-about-heading {
@@ -78,15 +100,18 @@
     font-style: normal;
     font-weight: 700;
     font-size: 54px;
+    line-height: 65px;
     color: #000000;
 }
 
 .platform-about-text {
-    width: 50%;
+    width: 100%;
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 74px;
+    line-height: 145%;
+    /* or 107px */
     color: #7E7E7E;
 }
 
@@ -153,7 +178,9 @@
     color: #000000; */
 }
 
-.globe {}
+.globe-shadow {
+    margin-top: 100px;
+}
 
 .globe-text {
     font-family: 'Darker Grotesque';
@@ -163,11 +190,13 @@
     padding-left: 20%;
     padding-right: 20%;
     text-align: center;
-    margin-top: -30%;
+    margin-top: -22%;
     letter-spacing: 0.02em;
     color: #7E7E7E;
 }
-
+.setting{
+    margin-bottom: 25%;
+}
 .chaos-text {
     display: flex;
     flex-direction: row;
