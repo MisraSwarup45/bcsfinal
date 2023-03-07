@@ -43,6 +43,8 @@ import Radio from './pages/Subpages/SpaceAndStudio/Radio';
 import Television from './pages/Subpages/SpaceAndStudio/Television';
 import Styling from './pages/Subpages/SpaceAndStudio/Styling';
 import ForCreators from './components/ForCreators/ForCreators';
+import Client from '../src/components/Client/Client';
+import Explore from '../src/components/Explore/Explore';
 
 function App() {
   return (
@@ -92,6 +94,7 @@ function App() {
         <Route path='/customer' element={<Customer />} />
         <Route path='/forcreators' element={<ForCreators />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/explore' element={<Explore />} />
     </Routes>
     </div>
   );

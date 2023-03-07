@@ -1,0 +1,262 @@
+.explore-head {
+    margin-top: 7%;
+}
+
+.explore-heading {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    color: #545454;
+    width: 102%;
+}
+
+.explore-btn {
+    height: 80px;
+    margin-top: 15%;
+    box-sizing: border-box;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    display: flex;
+    color: #000000;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-explore {
+    border-radius: 40px;
+    height: 45px;
+    width: 100%;
+    border: 1px solid #000000;
+}
+
+::placeholder {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    padding-left: 50px;
+}
+
+.input-search {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 30%;
+}
+
+.input-search-btn {
+    background-color: #FFFF00;
+    height: 50px;
+    padding: 2%;
+    width: 20%;
+    border-radius: 40px;
+}
+
+.explore-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    padding: 5%;
+    line-height: 78px;
+    color: #000000;
+}
+
+.explore-text-btn {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
+    padding-top: 7%;
+    margin-bottom: 5%;
+}
+
+.exploreimg {
+    width: 80%;
+}
+
+.explore-types {
+    display: flex;
+    padding: 7%;
+    justify-content: space-between;
+}
+
+.explore-input {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #7E7E7E;
+    border-radius: 34px;
+}
+
+.explore-btns {
+    width: 30%;
+}
+
+.explore-btn-img {
+    background: none;
+    align-items: center;
+    margin: 3%;
+    font-family: 'Darker Grotesque';
+    font-weight: 500;
+    font-size: 32px;
+    border: 1px solid #7E7E7E;
+    border-radius: 34px;
+    align-items: center;
+}
+
+.btn-back {
+    background-color: #FFFF00;
+}
+
+.explore-grid-img {
+    padding: 5px;
+}
+
+.cone-btn {
+    background: transparent;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    border-radius: 15px;
+    margin-left: 40px;
+    margin-bottom: 5px;
+}
+
+.explore-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.explore-card {
+    margin: 20px;
+    border: 2px solid #000000;
+    border-radius: 15px;
+}
+
+.explore-card-head {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+}
+
+.explore-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+}
+
+.explore-card-subhead {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+}
+
+.explore-card-location {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+}
+
+.explore-card-prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.explore-hire-btn {
+    width: 50%;
+    background: #FFFF00;
+    border: 1px solid #000000;
+    border-radius: 35px;
+    margin-top: 20px;
+    padding: 3%;
+    font-family: 'Cormorant';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.hire-explore {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    color: #BC312E;
+    padding: 5px;
+    margin-top: -1%;
+    z-index: 1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+
+.review-img {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+}
+
+.star {
+    height: 1%;
+    margin-right: 3px;
+}
+
+#app {
+    height: 100%;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

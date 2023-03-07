@@ -36,15 +36,15 @@ const Team = () => {
         setItems(updatedItems);
     }
 
-    const updatedMedia = Companies.filter((currMedia)=>{
+    const updatedMedia = Companies.filter((currMedia) => {
         return currMedia.category === 'digital';
     })
 
     const [medias, setMedias] = useState(updatedMedia);
     const [media, setMedia] = useState('digital');
 
-    const filterMedia = (catMedia) =>{
-        const updatedMedias = Companies.filter((currMedia)=>{
+    const filterMedia = (catMedia) => {
+        const updatedMedias = Companies.filter((currMedia) => {
             return currMedia.category === catMedia;
         });
         setMedia(catMedia);
@@ -58,19 +58,21 @@ const Team = () => {
     return (
         <>
             <div className='categories'>
-                <button onClick={() => filterItem('graphic')} className = {item === 'graphic'? "activa cat-items" : " cat-items" } >Graphic Design</button>
-                <button onClick={() => filterItem('cinema')} className = {item === 'cinema'? "activa cat-items" : " cat-items"}>Cinematography</button>
-                <button onClick={() => filterItem('photo')} className = {item === 'photo'? "activa cat-items" : " cat-items"}>Photography</button>
-                <button onClick={() => filterItem('content')} className = {item === 'content'? "activa cat-items" : " cat-items"}>Content Writing</button>
-                <button onClick={() => filterItem('space')} className = {item === 'space'? "activa cat-items" : " cat-items"}>Space & Studio</button>
+                <button onClick={() => filterItem('graphic')} className={item === 'graphic' ? "activa cat-items" : " cat-items"} >Graphic Design</button>
+                <button onClick={() => filterItem('cinema')} className={item === 'cinema' ? "activa cat-items" : " cat-items"}>Cinematography</button>
+                <button onClick={() => filterItem('photo')} className={item === 'photo' ? "activa cat-items" : " cat-items"}>Photography</button>
+                <button onClick={() => filterItem('content')} className={item === 'content' ? "activa cat-items" : " cat-items"}>Content Writing</button>
+                <button onClick={() => filterItem('space')} className={item === 'space' ? "activa cat-items" : " cat-items"}>Space & Studio</button>
             </div>
             <div className='item-grid'>
                 {items.map((ele) => {
                     const { id, image, category, decs } = ele;
                     return (
                         <div className='item-grid-box'>
-                            <div className='grid-item-img'><img className='img-grid' src={image}></img></div>
-                            <div className='img-grid-desc'>{decs}</div>
+                            <div className='grid-item-img'>
+                                <img className='img-grid' src={image}></img>
+                                <div className='img-grid-desc'>{decs}</div>
+                            </div>
                         </div>
                     )
                 })}
@@ -86,14 +88,14 @@ const Team = () => {
                     <div className='text-bg'>
                         <div>
                             <div className='dot1' >
-                                <img className='dotimg' src={dot}></img>  
+                                <img className='dotimg' src={dot}></img>
                                 <div className='team---text'>
                                     Connect and collaborate with your internal and external teams.
-                                </div> 
+                                </div>
                             </div>
                             <div className='dot2' >
                                 <div>
-                                <img className='dotimg' src={dot}></img>   
+                                    <img className='dotimg' src={dot}></img>
                                 </div>
                                 <div className='team---text'>
                                     Whether you need design work done, content writing, animation or full production service, we have the right people for the job.
@@ -244,20 +246,20 @@ const Team = () => {
             <div>
                 <div className='other-company-heading'>Our Other Companies</div>
                 <div className='other-company'>
-                    <button onClick={() => filterMedia('digital') } className={media === "digital"? "activaa company-name": "company-name"}>BB Digital Media</button>
-                    <button onClick={() => filterMedia('creative')} className={media === "creative"? "activaa company-name": "company-name"}>BB Creative Corner</button>
-                    <button onClick={() => filterMedia('corporate')} className={media === "corporate"? "activaa company-name": "company-name"}>BB Corporate Connect</button>
-                    <button onClick={() => filterMedia('wedding')} className={media === "wedding"? "activaa company-name": "company-name"}>BB Wedding</button>
-                    <button onClick={() => filterMedia('celebration')} className={media === "celebration"? "activaa company-name": "company-name"}>BB Celebration</button>
-                    <button onClick={() => filterMedia('salon')} className={media === "salon"? "activaa company-name": "company-name"}>BB Salon</button>
+                    <button onClick={() => filterMedia('digital')} className={media === "digital" ? "activaa company-name" : "company-name"}>BB Digital Media</button>
+                    <button onClick={() => filterMedia('creative')} className={media === "creative" ? "activaa company-name" : "company-name"}>BB Creative Corner</button>
+                    <button onClick={() => filterMedia('corporate')} className={media === "corporate" ? "activaa company-name" : "company-name"}>BB Corporate Connect</button>
+                    <button onClick={() => filterMedia('wedding')} className={media === "wedding" ? "activaa company-name" : "company-name"}>BB Wedding</button>
+                    <button onClick={() => filterMedia('celebration')} className={media === "celebration" ? "activaa company-name" : "company-name"}>BB Celebration</button>
+                    <button onClick={() => filterMedia('salon')} className={media === "salon" ? "activaa company-name" : "company-name"}>BB Salon</button>
                 </div>
             </div>
 
 
             <div className='cont-rect'>
-                {medias.map((ele)=>{
-                    const {id, category, title, desc} = ele;
-                    return(
+                {medias.map((ele) => {
+                    const { id, category, title, desc } = ele;
+                    return (
                         <>
                             <div className='recto-text'>
                                 {title}
@@ -271,7 +273,7 @@ const Team = () => {
                         </>
                     )
                 })}
-                
+
             </div>
         </>
     )
