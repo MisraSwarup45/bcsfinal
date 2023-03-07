@@ -589,9 +589,9 @@
 }
 
 .item-grid-box {
-    position: relative;
+    display: flex;
+    justify-content: center;
     font-size: 30px;
-    text-align: center;
     margin-top: 50px;
 }
 
@@ -602,7 +602,7 @@
 
 .img-grid-desc {
     position: absolute;
-    width: 45%;
+    width: 80%;
     font-family: 'Darker Grotesque';
     text-align: start;
     font-weight: 500;
@@ -610,8 +610,7 @@
     background: #FFFF00;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 0.5%;
-    left: 21%;
-    top: 70%;
+    margin-top: -20%;
 }
 
 .img-grid {

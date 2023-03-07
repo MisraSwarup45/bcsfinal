@@ -70,8 +70,10 @@ const Team = () => {
                     const { id, image, category, decs } = ele;
                     return (
                         <div className='item-grid-box'>
-                            <div className='grid-item-img'><img className='img-grid' src={image}></img></div>
-                            <div className='img-grid-desc'>{decs}</div>
+                            <div className='grid-item-img'>
+                                <img className='img-grid' src={image}></img>
+                                <div className='img-grid-desc'>{decs}</div>
+                            </div>
                         </div>
                     )
                 })}

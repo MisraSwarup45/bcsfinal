@@ -50,7 +50,7 @@ const Nav = () => {
           <Link className='navLink' to='/platform'>Platform</Link>
           <button className='navLink' onClick={handleOn}>Services</button>
           <button className='navLink' onClick={handleShow}>Company</button>
-          <Link className='navLink' to='/'>Explore</Link>
+          <Link className='navLink' to='/explore'>Explore</Link>
           <Link className='navLink' to='/forcreators'>For Creators</Link>
         </div>
         <div className='Login--Talk'>
