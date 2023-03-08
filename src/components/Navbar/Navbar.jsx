@@ -57,9 +57,9 @@ const Nav = () => {
           <div>
             <Link className='Login--hover' to='/login'>Login</Link>
           </div>
-          <div className='Lettalkborder'>
+          {/* <button className='Lettalkborder'> */}
             <Link className='Let--Talk' to='/'>Let's Talk</Link>
-          </div>
+          {/* </button> */}
         </div>
       </div>
       <Modal size="lg" show={show} onHide={handleClose} animation={false}>

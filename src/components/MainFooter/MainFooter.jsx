@@ -44,7 +44,7 @@ const MainFooter = () => {
                                 <input className='form-input input1' type="email" placeholder='Email' ></input>
                             </div>
                             <input className='form-input input3' type="email" placeholder='Project Description' ></input>
-                            <div className='form-btn'>Submit</div>
+                            <button type='submit' className='form-btn'>Submit</button>
                         </form>
                     </div>
                 </div>
