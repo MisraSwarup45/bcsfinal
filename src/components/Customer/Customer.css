@@ -33,23 +33,28 @@
     font-family: 'Cormorant';
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 76px;
+    letter-spacing: 0.02em;
+    line-height: 100%;
     color: #545454;
 }
 
 .customers-subheading {
-    margin-top: 25px;
+    width: 80%;
+    margin-top: 46px;
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 32px;
+    line-height: 43px;
     color: #000000;
 }
 
 .main-input {
+    font-size: 26px;
     box-sizing: border-box;
     position: absolute;
-    width: 400px;
+    width: 35%;
     height: 60px;
     background: #FFFFFF;
     border: 2px solid #000000;
@@ -57,6 +62,7 @@
 }
 
 .customers-input {
+    width: 100%;
     margin-top: 100px;
     display: flex;
     flex-direction: row;
@@ -64,11 +70,15 @@
 }
 
 .main-input-btn {
-    box-sizing: border-box;
+    font-family: 'Cormorant';
+    /* box-sizing: border-box; */
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
     background: #FFFF00;
     border: 1px solid #000000;
     border-radius: 12px;
-    padding: 18px;
+    padding: 15px 50px;
 }
 
 .main-input-btn:hover {
@@ -92,27 +102,33 @@
 }
 
 .story {
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 
 .story-head {
     font-family: 'Cormorant';
     font-style: normal;
     font-weight: 300;
-    font-size: 55px;
+    font-size: 64px;
+    line-height: 100%;
+    margin-bottom: 40px;
+
 }
 
 .story-desc {
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 40px;
+    line-height: 54px;
+    width: 87%;
     text-align: center;
-    margin-left: 210px;
-    margin-right: 210px;
+    /* margin-left: 210px;
+    margin-right: 210px; */
 }
 
 .color-bg {
@@ -186,7 +202,7 @@
     color: #000000;
 }
 
-.color-btn:hover{
+.color-btn:hover {
     background: black;
     color: white;
 }

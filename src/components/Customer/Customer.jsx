@@ -63,7 +63,7 @@ const Customer = () => {
                     </div>
                     <div className='customers-input'>
                         <div><input className='main-input' type={'email'} placeholder='Enter your email'></input></div>
-                        <div className='main-input-btn'>Get Started</div>
+                        <button className='main-input-btn'>Get Started</button>
                     </div>
                 </div>
                 <div className='customers-image-div'>
@@ -103,7 +103,7 @@ const Customer = () => {
                                 <div className='color-text'>
                                     <div className='color-head'>{heading}</div>
                                     <div className='color-desc'>{desc}</div>
-                                    <div className='color-btn'>Read full case study</div>
+                                    <button className='color-btn'>Read full case study</button>
                                 </div>
                             </div>
                         </div>
