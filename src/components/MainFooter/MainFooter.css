@@ -69,12 +69,20 @@
     outline: none;
     border-bottom: 1px solid #000000;
     margin: 20px;
+    font-family: 'Darker Grotesque';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #000000;
+
 }
-.input1{
+
+.input1 {
     width: 42%;
 }
 
-.input3{
+.input3 {
     width: 92%;
 }
 
@@ -95,7 +103,7 @@
     color: #000000;
 }
 
-.form-btn:hover{
+.form-btn:hover {
     cursor: pointer;
     color: white;
     background-color: black;

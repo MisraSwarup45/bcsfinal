@@ -63,7 +63,7 @@ const Customer = () => {
                     </div>
                     <div className='customers-input'>
                         <div><input className='main-input' type={'email'} placeholder='Enter your email'></input></div>
-                        <div className='main-input-btn'>Get Started</div>
+                        <button className='main-input-btn'>Get Started</button>
                     </div>
                 </div>
                 <div className='customers-image-div'>
@@ -96,20 +96,20 @@ const Customer = () => {
                 {customer.map(({ bg, image, heading, desc }) => (
                     <div className='color-bg-div'>
                         <img className='color-bg1' src={bg}></img>
-                        <div className='bg-div'>
+                        <div className='bg-div' >
                             <div><img className='phonebg' src={image}></img></div>
                             <div className='color-head-div'>
-                                <div className='color-gap'></div>
+                                {/* <div className='color-gap'></div> */}
                                 <div className='color-text'>
                                     <div className='color-head'>{heading}</div>
                                     <div className='color-desc'>{desc}</div>
-                                    <div className='color-btn'>Read full case study</div>
+                                    <button className='color-btn'>Read full case study</button>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                ))};
+                ))}
             </div>
             <MainFooter />
             <Featured />

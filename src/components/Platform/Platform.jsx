@@ -10,6 +10,7 @@ import createteam from '../../images/creativityteam.png';
 import bag from '../../images/bagteam.png';
 import team from '../../images/usersteam.png';
 import pay from '../../images/payteam.png';
+import girl from '../../images/girl.png';
 import platform from '../../images/platform-girl.png';
 import MainFooter from '../MainFooter/MainFooter';
 import Footer from '../Footer/Footer';
@@ -138,9 +139,19 @@ const Platform = () => {
                     </div>
                 </div>
 
-                <div className='platform-image'>
-                    <img src={platform}></img>
+                <div className='photo-girl'>
+                <div>
+                    <img className='girl-image' src={girl}></img>
                 </div>
+                <div>
+                    <div className='girl-para'>
+                        Know how our creators are benefiting from the platform
+                    </div>
+                    <div className='girl--btn'>
+                        <button className='girl-btn'>View Creators Profile</button>
+                    </div>
+                </div>
+            </div>
                 <MainFooter />
                 <Featured />
                 <Footer />
