@@ -80,10 +80,16 @@
     width: 80%;
 }
 
+.Community {
+    width: 80%;
+    margin: auto;
+}
+
 .explore-types {
     display: flex;
-    padding: 7%;
     justify-content: space-between;
+    margin-bottom: 3%;
+    padding-right: 1%;
 }
 
 .explore-input {
@@ -95,15 +101,18 @@
 
 .explore-btns {
     width: 30%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .explore-btn-img {
+    width: 50%;
     background: none;
     align-items: center;
     margin: 3%;
     font-family: 'Darker Grotesque';
     font-weight: 500;
-    font-size: 32px;
+    font-size: 24px;
     border: 1px solid #7E7E7E;
     border-radius: 34px;
     align-items: center;
@@ -131,7 +140,7 @@
 
 .explore-cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .explore-card {
@@ -161,6 +170,8 @@
     font-weight: 400;
     font-size: 26px;
     line-height: 35px;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .explore-card-location {
@@ -169,12 +180,21 @@
     font-weight: 400;
     font-size: 26px;
     line-height: 35px;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .explore-card-prices {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.price {
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .explore-hire-btn {
@@ -188,6 +208,16 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
+}
+
+.rightarrow{
+    height: 1%;
+    width: 1%;
+    margin: auto;
+}
+
+.rightarrow:hover{
+    cursor: pointer;
 }
 
 .hire-explore {
@@ -218,45 +248,4 @@
 .star {
     height: 1%;
     margin-right: 3px;
-}
-
-#app {
-    height: 100%;
-}
-
-html,
-body {
-    position: relative;
-    height: 100%;
-}
-
-body {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-}
-
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }

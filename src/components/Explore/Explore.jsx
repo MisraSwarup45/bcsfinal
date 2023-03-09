@@ -20,11 +20,7 @@ import star from '../../images/star.png';
 import MainFooter from '../MainFooter/MainFooter';
 import Featured from '../Featured_blog/Featured';
 import Footer from '../Footer/Footer';
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
+import rightarrow from '../../images/rightarrow.png';
 
 const Explore = () => {
     const items = [
@@ -71,7 +67,7 @@ const Explore = () => {
     }
     return (
         <div>
-            {/* <Navbar />
+            <Navbar />
             <div className='explore'>
                 <div className='for-head explore-head'>
                     <div className='for-texts'>
@@ -109,79 +105,64 @@ const Explore = () => {
                 })}
             </div>
             <div className='explore-text'>Explore our community</div>
-            <div className='explore-types'>
-                <div><input className='explore-input' onchange={hideIcon(this)} type='text' placeholder="Search Creators"></input></div>
-                <div className='explore-btns'>
-                    <button className='explore-btn-img btn-back'><img className='explore-grid-img' src={grid}></img>Grid</button>
-                    <button className='explore-btn-img'><img className='explore-grid-img' src={list}></img>List</button>
-                    <button className='cone-btn'><img src={cone}></img></button>
-                </div>
-            </div>
-            <div className='explore-cards'> */}
-                {/* <div className='explore-card'>
-                    <div className='image-expo'><img className='exploremen' src={exploremen}></img></div>
-                    <div className='review-img'><div className='reviews'><img className='star' src={star}></img>  4.7 (51 reviews)</div></div>
-                    <div className='explore-desc'>
-                        <div className='explore-card-head'>Creator Name</div>
-                        <div className='explore-card-subhead'>Doodle Design + Logo Animation</div>
-                        <div className='explore-card-location'><img src={location}></img>   Mahalakshmi Nagar, Bangalore</div>
-                        <div className='explore-card-prices'>
-                            <div className='price'>₹ 1,000 /Day</div>
-                            <div className='number'><img src={phone}></img>  View Contact</div>
-                        </div>
-                        <div className='hire-explore'><button className='explore-hire-btn'>Hire Now</button></div>
+            <div className='Community'>
+                <div className='explore-types'>
+                    <div><input className='explore-input' onchange={hideIcon(this)} type='text' placeholder="Search Creators"></input></div>
+                    <div className='explore-btns'>
+                        <button className='explore-btn-img btn-back'><img className='explore-grid-img' src={grid}></img> Grid</button>
+                        <button className='explore-btn-img'><img className='explore-grid-img' src={list}></img> List</button>
+                        <button className='cone-btn'><img src={cone}></img></button>
                     </div>
                 </div>
-                <div className='explore-card'>
-                    <div className='image-expo'><img className='exploremen' src={exploremen}></img></div>
-                    <div className='review-img'><div className='reviews'><img className='star' src={star}></img>  4.7 (51 reviews)</div></div>
-                    <div className='explore-desc'>
-                        <div className='explore-card-head'>Creator Name</div>
-                        <div className='explore-card-subhead'>Doodle Design + Logo Animation</div>
-                        <div className='explore-card-location'><img src={location}></img>   Mahalakshmi Nagar, Bangalore</div>
-                        <div className='explore-card-prices'>
-                            <div className='price'>₹ 1,000 /Day</div>
-                            <div className='number'><img src={phone}></img>  View Contact</div>
+                <div className='explore-cards'>
+                    <div className='explore-card'>
+                        <div className='image-expo'><img className='exploremen' src={exploremen}></img></div>
+                        <div className='review-img'><div className='reviews'><img className='star' src={star}></img>  4.7 (51 reviews)</div></div>
+                        <div className='explore-desc'>
+                            <div className='explore-card-head'>Creator Name</div>
+                            <div className='explore-card-subhead'>Doodle Design + Logo Animation</div>
+                            <div className='explore-card-location'><img src={location}></img>   Mahalakshmi Nagar, Bangalore</div>
+                            <div className='explore-card-prices'>
+                                <div className='price'>₹ 1,000 /Day</div>
+                                <div className='number'><img src={phone}></img>  View Contact</div>
+                            </div>
+                            <div className='hire-explore'><button className='explore-hire-btn'>Hire Now</button></div>
                         </div>
-                        <div className='hire-explore'><button className='explore-hire-btn'>Hire Now</button></div>
                     </div>
+                    <div className='explore-card'>
+                        <div className='image-expo'><img className='exploremen' src={exploremen}></img></div>
+                        <div className='review-img'><div className='reviews'><img className='star' src={star}></img>  4.7 (51 reviews)</div></div>
+                        <div className='explore-desc'>
+                            <div className='explore-card-head'>Creator Name</div>
+                            <div className='explore-card-subhead'>Doodle Design + Logo Animation</div>
+                            <div className='explore-card-location'><img src={location}></img>   Mahalakshmi Nagar, Bangalore</div>
+                            <div className='explore-card-prices'>
+                                <div className='price'>₹ 1,000 /Day</div>
+                                <div className='number'><img src={phone}></img>  View Contact</div>
+                            </div>
+                            <div className='hire-explore'><button className='explore-hire-btn'>Hire Now</button></div>
+                        </div>
+                    </div>
+                    <div className='explore-card'>
+                        <div className='image-expo'><img className='exploremen' src={exploremen}></img></div>
+                        <div className='review-img'><div className='reviews'><img className='star' src={star}></img>  4.7 (51 reviews)</div></div>
+                        <div className='explore-desc'>
+                            <div className='explore-card-head'>Creator Name</div>
+                            <div className='explore-card-subhead'>Doodle Design + Logo Animation</div>
+                            <div className='explore-card-location'><img src={location}></img>   Mahalakshmi Nagar, Bangalore</div>
+                            <div className='explore-card-prices'>
+                                <div className='price'>₹ 1,000 /Day</div>
+                                <div className='number'><img src={phone}></img>  View Contact</div>
+                            </div>
+                            <div className='hire-explore'><button className='explore-hire-btn'>Hire Now</button></div>
+                        </div>
+                    </div>
+                    <img className='rightarrow' src={rightarrow}></img>
                 </div>
-                <div className='explore-card'>
-                    <div className='image-expo'><img className='exploremen' src={exploremen}></img></div>
-                    <div className='review-img'><div className='reviews'><img className='star' src={star}></img>  4.7 (51 reviews)</div></div>
-                    <div className='explore-desc'>
-                        <div className='explore-card-head'>Creator Name</div>
-                        <div className='explore-card-subhead'>Doodle Design + Logo Animation</div>
-                        <div className='explore-card-location'><img src={location}></img>   Mahalakshmi Nagar, Bangalore</div>
-                        <div className='explore-card-prices'>
-                            <div className='price'>₹ 1,000 /Day</div>
-                            <div className='number'><img src={phone}></img>  View Contact</div>
-                        </div>
-                        <div className='hire-explore'><button className='explore-hire-btn'>Hire Now</button></div>
-                    </div>
-                </div> */}
-                {/* <Swiper
-                    // pagination={{
-                    //   type: "progressbar",
-                    // }}
-                    navigation={true}
-                    modules={[Pagination, Navigation]}
-                    className="mySwiper"
-                >
-                    <SwiperSlide>Slide 1</SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
-                    <SwiperSlide>Slide 3</SwiperSlide>
-                    <SwiperSlide>Slide 4</SwiperSlide>
-                    <SwiperSlide>Slide 5</SwiperSlide>
-                    <SwiperSlide>Slide 6</SwiperSlide>
-                    <SwiperSlide>Slide 7</SwiperSlide>
-                    <SwiperSlide>Slide 8</SwiperSlide>
-                    <SwiperSlide>Slide 9</SwiperSlide>
-                </Swiper>
             </div>
             <MainFooter />
             <Featured />
-            <Footer /> */}
+            <Footer />
         </div>
     )
 }
