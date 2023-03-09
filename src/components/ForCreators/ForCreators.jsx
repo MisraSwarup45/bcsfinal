@@ -90,14 +90,14 @@ const ForCreators = () => {
                 <div className='for-head'>
                     <div className='for-texts'>
                         <div className='for-heading'>
-                            The Creative platform your Business needs
+                        We enable you to accomplish more of what you like.
                         </div>
                         <div className='for-text'>
-                            With the help of our innovative ideas, services, and solutions, we help startups and businesses develop more quickly and generate more sales and money.
+                        We provide creators the opportunity to collaborate with some of the top international companies and expand their portfolios.
                         </div>
-                        <div className='for-btn'>
+                        <button className='for-btn'>
                             Join as Creator
-                        </div>
+                        </button>
                     </div>
                     <div className='girlpen'>
                         <img className='for-girlpen' src={fcphoto}></img>
@@ -131,10 +131,10 @@ const ForCreators = () => {
                     <img className='creators-bg-right' src={triangle2}></img>
                 </div>
                 <div className='creator-content'>
-                    <div className='creator-content-text'>
+                    <div className='creator-content-image'>
                         <img src={frame2}></img>
                     </div>
-                    <div className='creator-content-image'>
+                    <div className='creator-content-text'>
                         <div className='creator-content-heading'>
                             Content Operations
                             Made Easy!
@@ -149,7 +149,7 @@ const ForCreators = () => {
                 </div>
                 <div className='creator-content'>
                     <div className='creator-content-text'>
-                        <div className='creator-content-heading'>
+                        <div className='creator-content-heading' id='third-creator-heading'>
                             Get Creative Projects
                             Delivered to Your Dashboard
                         </div>
@@ -169,8 +169,10 @@ const ForCreators = () => {
                         Choose a project with a need that fits your expertise to get started as a creator with BCS.
                     </div>
                 </div>
-                <div className='porjects-rect'>
+                <div className='projects-rect'>
+                    <div className="projects-card-div">
                     {projects.map(({ heading, image, title, text, link }) => (
+
                         <div className='projects-card'>
                             <div className='project-heading'>{heading}</div>
                             <div className='project-heading-card'>
@@ -184,9 +186,17 @@ const ForCreators = () => {
                                     {text}
                                 </div>
                             </div>
-                            <div className='view-btn'>View</div>
+                         
+
+                            <button className='view-btn'>View</button>
+                            
                         </div>
                     ))}
+                    </div>
+                    <div className='view-projects-btn-container'>
+
+                    <button className="yellow-btn view-projects-btn">View all Projects</button>
+                    </div>
                 </div>
                 <div className='how-it-works'>
                     <div className='how-it-works-heading'>
@@ -289,7 +299,7 @@ const ForCreators = () => {
                                     {answer}
                                 </div>
                             </Collapsible>
-                        ))};
+                        ))}
                     </div>
                     <div>
                         <img src={faq}></img>
