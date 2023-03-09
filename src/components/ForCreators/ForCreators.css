@@ -448,6 +448,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
+    line-height: 78px;
     color: #000000;
 }
 
@@ -501,6 +502,9 @@
 
 .know-name-pos {
     font-family: 'Darker Grotesque';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
 }
 
 .know-head {

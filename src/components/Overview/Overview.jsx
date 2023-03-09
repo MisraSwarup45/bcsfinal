@@ -79,10 +79,10 @@ const Overview = () => {
                 <div className='overview-desc-text'>We as an agency are proud of our diligent work habits. Because we're focused, you'll work directly with us, the founders, rather than being passed off to a less experienced creative staff. We are motivated and creative, and because the work we do for you will be added to our portfolio, we meticulously review and double-check each output.</div>
             </div>
             <div className='overview-headings'>Our Capabilities</div>
-            <div class="grid-container">
+            <div class="overview-grid-container">
                 {caps.map(({ image, title }) => (
-                    <div class="grid-item">
-                        <div><img src={image}></img></div>
+                    <div class="overview-grid-item">
+                        <div className='overview-grid-img'><img src={image}></img></div>
                         <div className='grid-item-text'>{title}</div>
                     </div>
                 ))}

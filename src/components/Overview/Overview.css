@@ -9,31 +9,35 @@
     position: absolute;
     padding-left: 5%;
     padding-top: 20%;
-    width: 40%;
-    margin-top: -60%;
+    width: 50%;
+    margin-top: -65%;
 }
 
 .overview-desc-line {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 10%;
+    padding: 7%;
 }
 
 .overview-desc-head {
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 600;
-    font-size: 44px;
+    font-size: 40px;
     line-height: 60px;
     color: #000000;
     padding: 2%;
+    margin-bottom: 15px;
 }
 
 .overview-desc-text {
     font-family: 'Darker Grotesque';
     font-style: normal;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 15px;
+
 }
 
 .overview-head {
@@ -41,14 +45,20 @@
     font-style: normal;
     font-weight: 700;
     font-size: 96px;
+    /* line-height: 114px; */
     color: #545454;
+    /* margin-bottom: 19px; */
 }
 
 .overview-desc {
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+
+    font-size: 32px;
+    line-height: 43px;
+
+
     color: #000000;
 }
 
@@ -62,19 +72,29 @@
     color: #000000;
 }
 
-.grid-container {
+.overview-grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 70px;
+    /* padding: 10px; */
+    margin: 20px 70px;
 }
 
-.grid-item {
-    padding: 20px;
+.overview-grid-item {
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 30px;
     text-align: center;
+    /* width:min-content; */
+}
+.overview-grid-img{
+    
 }
 
 .grid-item-text {
+    width: 100%;
     margin-top: -15%;
 }
 
@@ -113,17 +133,17 @@
     color: #000000;
 }
 
-.over-table{
+.over-table {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 1%;
 }
 
-.over-text-file{
+.over-text-file {
     width: 50%;
 }
 
-.over-image{
+.over-image {
     height: 20%;
 }
