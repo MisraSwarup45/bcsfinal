@@ -96,10 +96,10 @@ const Customer = () => {
                 {customer.map(({ bg, image, heading, desc }) => (
                     <div className='color-bg-div'>
                         <img className='color-bg1' src={bg}></img>
-                        <div className='bg-div'>
+                        <div className='bg-div' >
                             <div><img className='phonebg' src={image}></img></div>
                             <div className='color-head-div'>
-                                <div className='color-gap'></div>
+                                {/* <div className='color-gap'></div> */}
                                 <div className='color-text'>
                                     <div className='color-head'>{heading}</div>
                                     <div className='color-desc'>{desc}</div>
@@ -109,7 +109,7 @@ const Customer = () => {
                         </div>
 
                     </div>
-                ))};
+                ))}
             </div>
             <MainFooter />
             <Featured />
