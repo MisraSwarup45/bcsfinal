@@ -1,0 +1,78 @@
+.blogs--btns {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+}
+
+.blogs--grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+}
+
+.blogs--grid--items {
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+}
+
+
+.blog--cards {
+    /* border: 1px solid rgba(17, 17, 17, 0.1); */
+    border-radius: 6px;
+}
+
+.card--time {
+    display: flex;
+    padding-top: 5px;
+}
+
+.card--time--head {
+    background: black;
+    color: white;
+    padding: 4px;
+    font-family: 'Apercu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.card--times {
+    padding: 4px;
+    margin-left: 10px;
+    font-family: 'Apercu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+} 
+
+.blog--desc--section {
+    margin-left: 20px;
+}
+
+.card--heading {
+    width: 70%;
+    font-family: 'Apercu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 139%;
+}
+
+.card--head--desc {
+    width: 70%;
+    font-family: 'Apercu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+.card--btns {
+    background-color: transparent;
+    font-family: 'Apercu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 1%;
+} 

@@ -1,0 +1,28 @@
+.client-tesi {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    text-align: center;
+}
+
+.clients-head{
+    position: absolute;
+}
+
+.clients-head{
+    color: #BC312E;
+}
+
+.clients-text{
+    margin-top: 15%;
+    width: 60%;
+}
+
+.clients-btn{
+    margin-left: 20%;
+}
+
+.client-card{
+    padding-top: 40%;
+}

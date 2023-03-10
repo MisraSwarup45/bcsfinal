@@ -45,6 +45,7 @@ import Styling from './pages/Subpages/SpaceAndStudio/Styling';
 import ForCreators from './components/ForCreators/ForCreators';
 import Client from '../src/components/Client/Client';
 import Explore from '../src/components/Explore/Explore';
+import ExploreBlogs from '../src/components/Blogs/Blogs';
 
 function App() {
   return (
@@ -95,6 +96,8 @@ function App() {
         <Route path='/forcreators' element={<ForCreators />} />
         <Route path='/login' element={<Login />} />
         <Route path='/explore' element={<Explore />} />
+        <Route path='/exploreblogs' element={<ExploreBlogs />} />
+        <Route path='/clients' element={<Client />} />
     </Routes>
     </div>
   );

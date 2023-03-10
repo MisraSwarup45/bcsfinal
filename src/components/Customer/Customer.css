@@ -190,7 +190,7 @@
     font-style: normal;
     font-weight: 300;
     font-size: 34px;
-    line-height:46px ;
+    line-height: 46px;
     width: 80%;
     /* width: 400px; */
     color: #000000;
@@ -203,7 +203,7 @@
     border: 1px solid #000000;
     border-radius: 35px;
     /* width: 220px; */
-width: 50%;
+    width: 50%;
     margin-top: 40px;
     font-family: 'Cormorant';
     font-style: normal;
@@ -218,4 +218,26 @@ width: 50%;
 .color-btn:hover {
     background: black;
     color: white;
+}
+
+.customer-heading {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 92px;
+    line-height: 111px;
+    padding: 5%;
+}
+
+.customer-forms{
+    display: flex;
+}
+
+.slider-div{
+    width: 70%;
+    padding-bottom: 5%;
+}
+
+.form-data{
+    padding: 5%;
 }

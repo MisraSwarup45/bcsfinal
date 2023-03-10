@@ -124,15 +124,11 @@ const Team = () => {
             </div>
             <div>
 
-                    <h1 className='heading'>How we do it</h1>
+                <h1 className='heading'>How we do it</h1>
                 <div className="rectangles">
                     <img className='rectangle1' src={rect1}></img>
                     <br />
-                    {/* <br></br>
-                <br></br>
-            <br></br> */}
                     <img className='rectangle2' src={rect2}></img>
-                    {/* <br></br><br></br><br></br> */}
                 </div>
                 <div className='work'>
                     <div className='mywork'>
