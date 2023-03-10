@@ -4,8 +4,11 @@
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 40px;
+    line-height: 54px;
     padding: 80px;
+    /* width: 80%; */
+    margin: 5% auto;
     color: #000000;
 }
 
@@ -25,6 +28,7 @@
     grid-template-columns: auto auto auto;
     padding: 30px;
     justify-content: center;
+    margin-bottom: 10%;
 }
 
 .grid-leader-item {
@@ -36,16 +40,22 @@
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 32px;
     line-height: 43px;
     color: #000000;
+    margin-top: 30px;
 }
 
-.leader-image{
-    height: 200px;
-    
+.leader-image {
+    /* height: 200px; */
+    height: 100%;
+
 }
 
-.leader-title-text{
-    font-size: 12px;
+.leader-title-text {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
 }
