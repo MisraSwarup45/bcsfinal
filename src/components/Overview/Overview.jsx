@@ -79,7 +79,7 @@ const Overview = () => {
                 <div className='overview-desc-text'>We as an agency are proud of our diligent work habits. Because we're focused, you'll work directly with us, the founders, rather than being passed off to a less experienced creative staff. We are motivated and creative, and because the work we do for you will be added to our portfolio, we meticulously review and double-check each output.</div>
             </div>
             <div className='overview-headings'>Our Capabilities</div>
-            <div class="overview-grid-container">
+            <div className="overview-grid-container">
                 {caps.map(({ image, title }) => (
                     <div class="overview-grid-item">
                         <div className='overview-grid-img'><img src={image}></img></div>
@@ -87,9 +87,10 @@ const Overview = () => {
                     </div>
                 ))}
             </div>
-            <div className='overview-btn'>
+            <button className='overview-btn'>
                 Download Corporate Profile
-            </div>
+            </button>
+            <div className="spon-heading">Our Partners</div>
             <div className='customer-spon'>
                 <div className='spon-grp'>
                     <img className='companytags' src={oracle} />
@@ -135,15 +136,7 @@ const Overview = () => {
                         <img className='over-image' src={arr}></img><div className='over-text-file'>Lorem ipsum dolor sit amet consectetur. Cursus aliquet diam neque lacus quam mauris risus.</div>
                     </div>
                 </div>
-                <div className='over-table'>
-                    <div className='over-table'>
-                        <img className='over-image' src={arr}></img><div className='over-text-file'>Lorem ipsum dolor sit amet consectetur. Cursus aliquet diam neque lacus quam mauris risus.</div>
-                    </div>
-
-                    <div className='over-table'>
-                        <img className='over-image' src={arr}></img><div className='over-text-file'>Lorem ipsum dolor sit amet consectetur. Cursus aliquet diam neque lacus quam mauris risus.</div>
-                    </div>
-                </div>
+                
             </div>
             <Footer />
         </div>
