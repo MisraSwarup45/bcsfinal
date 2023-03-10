@@ -7,7 +7,7 @@ function Vision() {
     return <div>
     <Navbar />
     <header className="Header">
-        <div className="Name">
+        <div className="Name vision-heading">
             Vision, Mission & Values
         </div>
         <div className="Stake Stake1">

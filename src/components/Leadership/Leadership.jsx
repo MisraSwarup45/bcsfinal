@@ -2,7 +2,7 @@ import React from 'react';
 import './Leadership.css';
 import leadership from '../../images/leader.png';
 import leaderimg from '../../images/leaderimg.png';
-import Nav from '../Navbar/Navbar';
+import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 
 const Leadership = () => {
@@ -56,7 +56,7 @@ const Leadership = () => {
     ];
     return (
         <div>
-            <Nav/>
+            <Navbar/>
             <div className='overview'>
                 <img className='overview-bg' src={leadership}></img>
                 <div className='overview-text'>
