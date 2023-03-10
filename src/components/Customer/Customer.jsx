@@ -23,6 +23,7 @@ const Customer = () => {
                     </form>
                 </div>
                 <div className='slider-div'>
+                    <div className='slider-head'>Our valuable client testimonials</div>
                     <Slider />
                 </div>
             </div>
