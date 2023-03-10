@@ -229,15 +229,23 @@
     padding: 5%;
 }
 
-.customer-forms{
+.customer-forms {
     display: flex;
 }
 
-.slider-div{
+.slider-div {
     width: 70%;
     padding-bottom: 5%;
+    padding-right: 5%;
 }
 
-.form-data{
+.form-data {
     padding: 5%;
+}
+
+.slider-head {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 49px;
 }

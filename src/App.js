@@ -46,6 +46,7 @@ import ForCreators from './components/ForCreators/ForCreators';
 import Client from '../src/components/Client/Client';
 import Explore from '../src/components/Explore/Explore';
 import ExploreBlogs from '../src/components/Blogs/Blogs';
+import InsideBlog from './components/InsideBlog/InsideBlog';
 
 function App() {
   return (
@@ -98,6 +99,7 @@ function App() {
         <Route path='/explore' element={<Explore />} />
         <Route path='/exploreblogs' element={<ExploreBlogs />} />
         <Route path='/clients' element={<Client />} />
+        <Route path='/insideblogs' element={<InsideBlog />} />
     </Routes>
     </div>
   );
