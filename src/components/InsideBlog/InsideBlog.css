@@ -1,0 +1,130 @@
+.blog-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #FFFF00;
+}
+
+.inside-blog {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.blog-section {
+    width: 60%;
+}
+
+.blog-name-section {
+    display: flex;
+}
+
+.blog-post-name {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 100%;
+    margin-left: 7%;
+    color: #545454;
+}
+
+.blog-post-date {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 43px;
+    margin-left: 7%;
+    letter-spacing: 0.02em;
+}
+
+.blog-names {
+    width: 300px;
+}
+
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    /* padding-top: 20px; */
+    width: 20%;
+    display: flex;
+    padding-right: 0px;
+    border-left: 1px solid black;
+}
+
+.featured-blog {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 78px;
+    text-align: center;
+}
+
+.blogs {
+    margin-top: 10%;
+}
+
+.blog-heading {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 66px;
+    color: #545454;
+}
+
+.blogs-posts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-main-desc {
+    width: 400px;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 55px;
+}
+
+.blog-desc {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 65px;
+    letter-spacing: 0.02em;
+    padding-top: 5%;
+}
+
+.blog-btn {
+    background: #FFFF00;
+    border: 1px solid #000000;
+    border-radius: 35px;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    padding: 1%;
+    width: 30%;
+    margin-top: 5%;
+}
+
+.blog-btn:hover {
+    color: white;
+    background: black;
+}
+
+.blog-writer-name {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 66px;
+    color: #545454;
+    padding-top: 5%;
+}

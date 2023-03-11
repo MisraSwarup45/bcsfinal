@@ -107,7 +107,7 @@ const Explore = () => {
             <div className='explore-text'>Explore our community</div>
             <div className='Community'>
                 <div className='explore-types'>
-                    <div><input className='explore-input' onchange={hideIcon(this)} type='text' placeholder="Search Creators"></input></div>
+                    <div><input className='explore-input' type='text' placeholder="Search Creators"></input></div>
                     <div className='explore-btns'>
                         <button className='explore-btn-img btn-back'><img className='explore-grid-img' src={grid}></img> Grid</button>
                         <button className='explore-btn-img'><img className='explore-grid-img' src={list}></img> List</button>
