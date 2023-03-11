@@ -6,7 +6,9 @@ import grid from '../../images/grid.png';
 import list from '../../images/list.png';
 import cone from '../../images/cone.png';
 import './Blogs.css';
-import b1 from '../../images/b1.png';
+import ExploreBlogs from '../../pages/Datasets/ExploreBlogs';
+import Footer from '../Footer/Footer';
+import Featured from '../Featured_blog/Featured';
 
 const Blogs = () => {
     return (
@@ -38,49 +40,37 @@ const Blogs = () => {
                 </div>
             </div>
             <div className='blogs--grid'>
-                <div className='blogs--grid--items'>
-                    <div className='blog--cards'>
-                        <img src={b1}></img>
-                        <div className='blog--desc--section'>
-                            <div className='card--time'>
-                                <div className='card--time--head'>Blockchain</div>
-                                <div className='card--times'>5 min read</div>
+                {ExploreBlogs.map((ele) => {
+                    const { id, image, category, time, title, desc } = ele;
+                    return (
+                        <div className='blogs--grid--items'>
+                            <div className='blog--cards'>
+                                <div className='blog-img-div'><img className='blog-img' src={image}></img></div>
+                                <div className='blog--desc--section'>
+                                    <div className='card--time'>
+                                        <div className='card--time--head'>{category}</div>
+                                        <div className='card--times'>{time} min read</div>
+                                    </div>
+                                    <div className='card--heading'>{title}</div>
+                                    <div className='card--head--desc'>{desc}</div>
+                                    <button className='card--btns'>Read more &rsaquo;</button>
+                                </div>
                             </div>
-                            <div className='card--heading'>A beginner’s guide to blackchain for engineers</div>
-                            <div className='card--head--desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</div>
-                            <button className='card--btns'>Read more </button>
                         </div>
-                    </div>
-                </div>
-                 <div className='blogs--grid--items'>
-                    <div className='blog-cards'>
-                        <div><img src={b1}></img></div>
-                        <div className='blog-desc-section'>
-                            <div className='card-time'>
-                                <div className='card-time-head'>Blockchain</div>
-                                <div className='card-times'>5 min read</div>
-                            </div>
-                            <div className='card-heading'>A beginner’s guide to blackchain for engineers</div>
-                            <div className='card-head-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</div>
-                            <button className='card-btns'>Read more </button>
-                        </div>
-                    </div>
-                </div>
-                <div className='blogs--grid--items'>
-                    <div className='blog-cards'>
-                        <div><img src={b1}></img></div>
-                        <div className='blog-desc-section'>
-                            <div className='card-time'>
-                                <div className='card-time-head'>Blockchain</div>
-                                <div className='card-times'>5 min read</div>
-                            </div>
-                            <div className='card-heading'>A beginner’s guide to blackchain for engineers</div>
-                            <div className='card-head-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</div>
-                            <button className='card-btns'>Read more </button>
-                        </div>
-                    </div>
-                </div>
+                    )
+                })}
             </div>
+            <div className='blog-pages'>
+                <div className='blog-pages-div'>&lsaquo;</div>
+                <div className='blog-pages-div div-back'>1</div>
+                <div className='blog-pages-div'>2</div>
+                <div className='blog-pages-div'>3</div>
+                <div className='blog-pages-div'>4</div>
+                <div className='blog-pages-div'>5</div>
+                <div className='blog-pages-div'>&rsaquo;</div>
+            </div>
+            <Featured />
+            <Footer />
         </div>
     )
 }
