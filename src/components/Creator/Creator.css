@@ -7,7 +7,7 @@
 .creator-details {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     width: 25%;
     border-right: 2px solid black;
@@ -15,7 +15,7 @@
 }
 
 .details-bar {
-    width: 80%;
+    width: 90%;
     background-color: black;
 
 }
@@ -23,6 +23,12 @@
 .creator-grid {
     display: grid;
     grid-template-columns: auto auto;
+    grid-column-gap: 25px;
+    margin-top: 15px;
+}
+
+.creator-red {
+    color: #BC312E;
 }
 
 .creator-dp {
@@ -61,6 +67,8 @@
     line-height: 43px;
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 25px;
+
 }
 
 .creator-ratings {
@@ -68,6 +76,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 12px;
 }
 
 .creator-star {
@@ -83,6 +92,201 @@
     font-size: 20px;
     margin: 0;
     margin-left: 10px;
-    /* line-height: 35px; */
 
 }
+
+.creator-reviews {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.creator-website {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #5400C1;
+    margin-bottom: 25px;
+
+}
+
+.creator-socials {
+    margin-bottom: 50px;
+}
+
+.creator-social-icons {
+    margin: 0 13px;
+}
+
+.creator-message-btn {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    padding: 6px 50px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.creator-menu {
+    width: 80%;
+}
+
+.creator-menu-btns-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.creator-menu-btn {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    /* identical to box height */
+
+
+    color: #444444;
+    border: none;
+    background: #fff;
+    padding: 3px 30px;
+    margin: 0 35px;
+}
+
+.creator-btn-active {
+    background: #FFFFA8;
+    border-radius: 10px;
+    color: #000000;
+}
+
+.creator-about-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.creator-about-text {
+    margin: 60px;
+}
+
+.creator-about-heading {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+
+}
+
+.creator-about-heading h2 {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 41px;
+    width: fit-content;
+    margin-right: 8px;
+}
+
+.creator-about-heading div {
+    width: 60%;
+    height: 1px;
+    border-top: 1px solid #000;
+
+}
+
+.creator-about-description {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+
+    color: #444444;
+    margin-bottom: 70px;
+}
+
+.creator-about-cards-container {
+    width: 100%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.creator-card {
+    border: 1px solid #C6C6C6;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.creator-card-heading {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    margin-bottom: 16px;
+}
+
+.creator-service-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.creator-service-name {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.creator-price {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.creator-address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+}
+
+.creator-address div {
+    margin-left: 20px;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+.creator-contact-btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.creator-contact-btn {
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    padding: 10px 20px;
+    margin-top: 25px;
+}
+.creator-contact-btn img{
+    margin-right: 12px;
+}
+
