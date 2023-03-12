@@ -117,10 +117,12 @@ const Team = () => {
             </div>
 
             <div id='realteam'>
-                <h3 className='teamheading'>Why you should choose our service</h3>
-                <p className='para'>With decades of collective experience in design, content writing, animation and production studio service, we're here to serve you.</p>
-                <span className='line'>We are trusted by more than <span className='red' > 800 </span> clients</span>
-                <p className='desc'>Share your needs with us, and we'll take care of the rest. <br />We’re always available.<br />Best in class quality at affordable prices</p>
+                <div className='real-team-text'>
+                    <h3 className='teamheading'>Why you should choose our service</h3>
+                    <p className='para'>With decades of collective experience in design, content writing, animation and production studio service, we're here to serve you.</p>
+                    <span className='line'>We are trusted by more than <span className='red' > 800 </span> clients</span>
+                    <p className='desc'>Share your needs with us, and we'll take care of the rest. <br />We’re always available.<br />Best in class quality at affordable prices</p>
+                </div>
             </div>
             <div>
 

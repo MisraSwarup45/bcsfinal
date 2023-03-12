@@ -21,6 +21,14 @@ import MainFooter from '../MainFooter/MainFooter';
 import Featured from '../Featured_blog/Featured';
 import Footer from '../Footer/Footer';
 import rightarrow from '../../images/rightarrow.png';
+import leftarrow from '../../images/leftarrow.png';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import 'swiper/swiper-bundle.css';
+import SwiperCore, { FreeMode, Pagination, Navigation } from 'swiper/core';
+SwiperCore.use([FreeMode, Pagination, Navigation]);
 
 const Explore = () => {
     const items = [
@@ -62,9 +70,63 @@ const Explore = () => {
         },
     ];
 
-    const hideIcon = (self) => {
-        // self.style.backgroundImage = 'none';
-    }
+    const creator = [
+        {
+            id: 1,
+            image: exploremen,
+            rating: "4.7 (51 reviews)",
+            name: "Creator Name",
+            desc: "Doodle Design + Logo Animation",
+            locations: "Mahalakshmi Nagar, Bangalore",
+            price: "1,000 "
+        },
+        {
+            id: 2,
+            image: exploremen,
+            rating: "4.7 (51 reviews)",
+            name: "Creator Name",
+            desc: "Doodle Design + Logo Animation",
+            locations: "Mahalakshmi Nagar, Bangalore",
+            price: "1,000 "
+        },
+        {
+            id: 3,
+            image: exploremen,
+            rating: "4.7 (51 reviews)",
+            name: "Creator Name",
+            desc: "Doodle Design + Logo Animation",
+            locations: "Mahalakshmi Nagar, Bangalore",
+            price: "1,000 "
+        },
+        {
+            id: 3,
+            image: exploremen,
+            rating: "4.7 (51 reviews)",
+            name: "Creator Name",
+            desc: "Doodle Design + Logo Animation",
+            locations: "Mahalakshmi Nagar, Bangalore",
+            price: "1,000 "
+        },
+        {
+            id: 3,
+            image: exploremen,
+            rating: "4.7 (51 reviews)",
+            name: "Creator Name",
+            desc: "Doodle Design + Logo Animation",
+            locations: "Mahalakshmi Nagar, Bangalore",
+            price: "1,000 "
+        },
+        {
+            id: 3,
+            image: exploremen,
+            rating: "4.7 (51 reviews)",
+            name: "Creator Name",
+            desc: "Doodle Design + Logo Animation",
+            locations: "Mahalakshmi Nagar, Bangalore",
+            price: "1,000 "
+        },
+    ];
+
     return (
         <div>
             <Navbar />
@@ -115,51 +177,50 @@ const Explore = () => {
                     </div>
                 </div>
                 <div className='explore-cards'>
-                    <div className='explore-card'>
-                        <div className='image-expo'><img className='exploremen' src={exploremen}></img></div>
-                        <div className='review-img'><div className='reviews'><img className='star' src={star}></img>  4.7 (51 reviews)</div></div>
-                        <div className='explore-desc'>
-                            <div className='explore-card-head'>Creator Name</div>
-                            <div className='explore-card-subhead'>Doodle Design + Logo Animation</div>
-                            <div className='explore-card-location'><img src={location}></img>   Mahalakshmi Nagar, Bangalore</div>
-                            <div className='explore-card-prices'>
-                                <div className='price'>₹ 1,000 /Day</div>
-                                <div className='number'><img src={phone}></img>  View Contact</div>
-                            </div>
-                            <div className='hire-explore'><button className='explore-hire-btn'>Hire Now</button></div>
+                    <Swiper
+                        slidesPerView={3}
+                        spaceBetween={40}
+                        freeMode={true}
+                        modules={[FreeMode, Navigation]}
+                        className="mySwiper"
+                        navigation={{
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        }}
+                    >
+                        {
+                            creator.map((ele) => {
+                                const { id, image, rating, name, desc, locations, price } = ele;
+                                return (
+                                    <SwiperSlide>
+                                        <div className='explore-card'>
+                                            <div className='image-expo'><img className='exploremen' src={image}></img></div>
+                                            <div className='review-img'><div className='reviews'><img className='star' src={star}></img>  {rating}</div></div>
+                                            <div className='explore-desc'>
+                                                <div className='explore-card-head'>{name}</div>
+                                                <div className='explore-card-subhead'>{desc}</div>
+                                                <div className='explore-card-location'><img src={location}></img>   {locations}</div>
+                                                <div className='explore-card-prices'>
+                                                    <div className='price'>₹ {price} /Day</div>
+                                                    <div className='number'><img src={phone}></img>  View Contact</div>
+                                                </div>
+                                                <div className='hire-explore'><button className='explore-hire-btn'>Hire Now</button></div>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                )
+                            })
+                        }
+                        <div className="swiper-button-next">
+                            {/* <img src={rightarrow} alt="Next" /> */}
                         </div>
-                    </div>
-                    <div className='explore-card'>
-                        <div className='image-expo'><img className='exploremen' src={exploremen}></img></div>
-                        <div className='review-img'><div className='reviews'><img className='star' src={star}></img>  4.7 (51 reviews)</div></div>
-                        <div className='explore-desc'>
-                            <div className='explore-card-head'>Creator Name</div>
-                            <div className='explore-card-subhead'>Doodle Design + Logo Animation</div>
-                            <div className='explore-card-location'><img src={location}></img>   Mahalakshmi Nagar, Bangalore</div>
-                            <div className='explore-card-prices'>
-                                <div className='price'>₹ 1,000 /Day</div>
-                                <div className='number'><img src={phone}></img>  View Contact</div>
-                            </div>
-                            <div className='hire-explore'><button className='explore-hire-btn'>Hire Now</button></div>
+                        <div className="swiper-button-prev">
+                            {/* <img src={leftarrow} alt="Previous" /> */}
                         </div>
-                    </div>
-                    <div className='explore-card'>
-                        <div className='image-expo'><img className='exploremen' src={exploremen}></img></div>
-                        <div className='review-img'><div className='reviews'><img className='star' src={star}></img>  4.7 (51 reviews)</div></div>
-                        <div className='explore-desc'>
-                            <div className='explore-card-head'>Creator Name</div>
-                            <div className='explore-card-subhead'>Doodle Design + Logo Animation</div>
-                            <div className='explore-card-location'><img src={location}></img>   Mahalakshmi Nagar, Bangalore</div>
-                            <div className='explore-card-prices'>
-                                <div className='price'>₹ 1,000 /Day</div>
-                                <div className='number'><img src={phone}></img>  View Contact</div>
-                            </div>
-                            <div className='hire-explore'><button className='explore-hire-btn'>Hire Now</button></div>
-                        </div>
-                    </div>
-                    <img className='rightarrow' src={rightarrow}></img>
+                    </Swiper>
                 </div>
             </div>
+
             <MainFooter />
             <Featured />
             <Footer />

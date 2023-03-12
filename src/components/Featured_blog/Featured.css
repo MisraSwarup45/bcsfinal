@@ -25,11 +25,10 @@
 }
 
 .featured--block--content {
-    width: 100%;
     margin: 2%;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 30%;
 }
 
 .featured--block--content h3 {
