@@ -602,7 +602,8 @@
 
 .img-grid-desc {
     position: absolute;
-    width: 80%;
+    width: 85%;
+    padding-left: 1%;
     font-family: 'Darker Grotesque';
     text-align: start;
     font-weight: 500;
@@ -610,6 +611,7 @@
     background: #FFFF00;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 0.5%;
+    padding-left: 5%;
     margin-top: -20%;
 }
 

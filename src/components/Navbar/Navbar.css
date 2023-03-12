@@ -163,3 +163,14 @@ a:hover {
 .text-link {
     padding: 10%;
 }
+
+.explore-nav--grid--item{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.explore-text-link{
+    margin: 10%;
+    width: 40%;
+}

@@ -44,15 +44,7 @@ const Nav = [
         cat: 'career',
     },
     {
-        text: 'Learning & Development',
-        cat: 'career',
-    },
-    {
-        text: 'Fresher',
-        cat: 'career',
-    },
-    {
-        text: 'Experienced Professional',
+        text: 'Diversity & Inclusion',
         cat: 'career',
     },
     {
@@ -194,6 +186,22 @@ const Nav = [
         text: 'Styling Studio - Salon',
         cat: 'space',
         link: 'styling',
+    },
+    {
+        text: 'Our Team',
+        cat: 'community',
+    },
+    {
+        text: 'Talents',
+        cat: 'community',
+    },
+    {
+        text: 'Services',
+        cat: 'categories',
+    },
+    {
+        text: 'Our top Skills',
+        cat: 'categories',
     },
 ];
 
