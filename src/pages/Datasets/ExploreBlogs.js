@@ -20,7 +20,8 @@ const ExploreBlogs = [
         category: "People",
         time: "5",
         title: "How to secure have your crypto wallet",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+        flag: true,
     },
     {
         id: 3,
@@ -28,7 +29,8 @@ const ExploreBlogs = [
         category: "NFT",
         time: "5",
         title: "New NFT projects to watch : December 2022",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+        flag: true,
     },
     {
         id: 4,
@@ -52,7 +54,8 @@ const ExploreBlogs = [
         category: "Blockchain",
         time: "5",
         title: "Guide to buy cryptocurrency safly : September 2022",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+        flag: true,
     },
     {
         
