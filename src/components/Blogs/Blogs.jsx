@@ -11,9 +11,6 @@ import Footer from '../Footer/Footer';
 import Featured from '../Featured_blog/Featured';
 import bookmark from '../../images/bookmark.png';
 import john from '../../images/john.png';
-import b2 from '../../images/b2.png';
-import b3 from '../../images/b3.png';
-import b6 from '../../images/b6.png';
 
 const Blogs = () => {
     const [isListView, setIsListView] = useState(true);

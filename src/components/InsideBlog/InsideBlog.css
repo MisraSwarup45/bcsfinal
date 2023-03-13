@@ -20,6 +20,27 @@
     display: flex;
 }
 
+
+.blog-cat1 {
+    display: flex;
+    margin-left: 94%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 1%;
+}
+
+.blog-discover {
+    font-family: 'Darker Grotesque';
+    padding-top: 10%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 139%;
+}
+
 .blog-post-name {
     font-family: 'Cormorant';
     font-style: normal;
@@ -31,6 +52,8 @@
 }
 
 .blog-post-date {
+    display: flex;
+    justify-content: space-between;
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 500;
@@ -38,10 +61,31 @@
     line-height: 43px;
     margin-left: 7%;
     letter-spacing: 0.02em;
+    width: 600px;
+}
+
+.blog-grids {
+    display: flex;
+    flex-direction: column;
+}
+
+.blogs-all {
+    display: flex;
+    padding-top: 10px;
 }
 
 .blog-names {
     width: 300px;
+}
+
+.item-blogs {
+    margin-right: 50px;
+    border: 1px solid #000000;
+    padding: 1%;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
 }
 
 .blog-posts {
@@ -56,17 +100,57 @@
     border-left: 1px solid black;
 }
 
-.featured-blog {
+.featured-blog {}
+
+.writer-name {
     font-family: 'Cormorant';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 700;
     font-size: 40px;
-    line-height: 78px;
-    text-align: center;
+    line-height: 100%;
+    color: #545454;
+    padding-top: 1%;
+}
+
+.writter-followers {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.writter-desc {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 0.02em;
+}
+
+.follow-img {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+}
+
+.follower-btn {
+    background: #040404;
+    border-radius: 10px;
+    color: white;
+    padding: 10% 50%;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.02em;
 }
 
 .blogs {
     margin-top: 10%;
+    width: 100%;
 }
 
 .blog-heading {
@@ -74,6 +158,8 @@
     font-style: normal;
     font-weight: 700;
     font-size: 66px;
+    padding-top: 3%;
+    padding-bottom: 3%;
     color: #545454;
 }
 
@@ -95,8 +181,7 @@
     font-family: 'Darker Grotesque';
     font-style: normal;
     font-weight: 500;
-    font-size: 38px;
-    line-height: 65px;
+    font-size: 28px;
     letter-spacing: 0.02em;
     padding-top: 5%;
 }
