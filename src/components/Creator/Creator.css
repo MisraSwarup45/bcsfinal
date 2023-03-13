@@ -139,7 +139,7 @@
 }
 
 .creator-menu-btns-container {
-    margin-top: 50px;
+    margin-top: 3%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -271,12 +271,14 @@
     font-size: 18px;
     line-height: 24px;
 }
-.creator-contact-btn-container{
+
+.creator-contact-btn-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
+
 .creator-contact-btn {
     font-family: 'Cormorant';
     font-style: normal;
@@ -286,7 +288,152 @@
     padding: 10px 20px;
     margin-top: 25px;
 }
-.creator-contact-btn img{
+
+.creator-contact-btn img {
     margin-right: 12px;
 }
 
+.creator-portfolio-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px 25px;
+    margin: 8% 5%;
+}
+
+.creator-portfolio-card {
+    width: 100%;
+    height: 248px;
+    background: #eaeaea;
+    border-radius: 20px;
+
+}
+
+
+.creator-reviews-main {
+    display: flex;
+    margin-top: 4%;
+}
+
+.creator-reviews-left {
+    width: 65%;
+}
+
+.creator-reviews-right {
+    margin-top: 1.5%;
+    width: 30%;
+}
+
+.creator-review-card {
+    background: #FFFEF8;
+    border: 1px solid #DCDCDC;
+    border-radius: 20px;
+    /* width: 65%; */
+    margin: 2% 3%;
+    padding: 2%;
+}
+
+.creator-review-card-header {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-right: 0;
+
+}
+
+.creator-review-card-name-time {
+    width: 72%;
+    margin: 0 3%;
+}
+
+.creator-review-card-name-time h3 {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 0;
+}
+
+.creator-review-card-name-time p {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.creator-review-platform {
+    height: 25px;
+}
+
+.creator-review-dp {
+    height: 64px;
+    width: 64px;
+}
+
+.creator-review-card-subtext {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.rating-distribution {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+
+}
+
+.rating-distribution p {
+    margin: 0;
+}
+
+.rating-no {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.no-of-rating {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #444444;
+}
+
+.rating-bar {
+    height: 14px;
+    width: 60%;
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.1), inset 0px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+}
+.rating-bar-filled{
+    margin: 1px;
+    height: 12px;
+    width: 60%;
+    background: #FFFF00;
+    border-radius: 7px;
+}
+.r5{
+ width: 60%;
+}
+.r4{
+    width: 80%;
+}
+.r3{
+    width: 50%;
+}
+.r2{
+    width: 40%;
+}
+.r1{
+    width: 30%;
+}

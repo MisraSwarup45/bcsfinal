@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../Navbar/Navbar'
 import './Creator.css'
 import dp from '../../images/display-picture.png'
@@ -11,7 +11,15 @@ import linkedin from '../../images/linkedin.png'
 import location from '../../images/location.png'
 import mail from '../../images/mail.png'
 import phone from '../../images/phone-black.png'
+import Reviews from '../../pages/Datasets/Reviews'
+
+
+
 const Creator = () => {
+    const [item, setItem] = useState('reviews');
+    const menuChange = (menuItem) => {
+        setItem(menuItem)
+    }
     return (
         <div>
             <Navbar />
@@ -52,65 +60,158 @@ const Creator = () => {
                 </div>
                 <div className="creator-menu">
                     <div className="creator-menu-btns-container">
-                        <button className="creator-menu-btn creator-btn-active">About</button>
-                        <button className="creator-menu-btn">Portfolio</button>
-                        <button className="creator-menu-btn">Reviews</button>
+                        <button onClick={() => menuChange('about')} className={item === 'about' ? "creator-menu-btn creator-btn-active" : "creator-menu-btn"} >About</button>
+                        <button onClick={() => menuChange('portfolio')} className={item === 'portfolio' ? "creator-menu-btn creator-btn-active" : "creator-menu-btn"} >Portfolio</button>
+                        <button onClick={() => menuChange('reviews')} className={item === 'reviews' ? "creator-menu-btn creator-btn-active" : "creator-menu-btn"}>Reviews</button>
                     </div>
-                    <div className="creator-about-container">
-                        <div className="creator-about-text">
-                            <div className="creator-about-heading">
-                                <h2>About - Jane Cooper</h2>
-                                <div />
-                            </div>
-                            <div className="creator-about-description">
-                                <p>Lorem ipsum dolor sit amet consectetur. Viverra egestas scelerisque viverra consectetur id bibendum eu. Cum at lorem pulvinar purus quam etiam non varius cursus. Purus id proin tristique venenatis. Condimentum lectus lectus ut vivamus. Gravida enim et augue sed.</p>
-                            </div>
-                            <div className="creator-about-heading">
-                                <h2>Services offered</h2>
-                                <div />
-                            </div>
-                            <div className="creator-about-description">
-                                <p>Lorem ipsum dolor sit amet consectetur. Viverra egestas scelerisque viverra consectetur id bibendum eu. Cum at lorem pulvinar purus quam etiam non varius cursus. Purus id proin tristique venenatis. Condimentum lectus lectus ut vivamus. Gravida enim et augue sed.</p>
-                                
-                                    <li>Doodle Design</li>
-                                    <li>Brochure Design</li>
-                                    <li>Photo Editing</li>
-                                    <li>Costume Design</li>
-                                
-                            </div>
-                            <div className="creator-about-heading">
-                                <h2>Working Style</h2>
-                                <div />
-                            </div>
-                            <div className="creator-about-description">
-                                <p>Lorem ipsum dolor sit amet consectetur. Viverra egestas scelerisque viverra consectetur id bibendum eu. Cum at lorem pulvinar purus quam etiam non varius cursus. Purus id proin tristique venenatis. Condimentum lectus lectus ut vivamus. Gravida enim et augue sed.</p>
-                            </div>
-                        </div>
-                        <div className="creator-about-cards-container">
-                            <div className="creator-card">
-                                <h3 className='creator-card-heading'>Pricing</h3>
-                                <div className="creator-service-grid">
+                    <div className="creator-menu-item-container">
 
-                                <p className="creator-service-name">Service Name</p>
-                                <p className="creator-price">₹ 1,000 /Day</p>
-                                <p className="creator-service-name">Service Name</p>
-                                <p className="creator-price">₹ 1,000 /Day</p>
-                                <p className="creator-service-name">Service Name</p>
-                                <p className="creator-price">₹ 1,000 /Day</p>
+                        {item === 'about' && (
+                            <div className="creator-about-container">
+                                <div className="creator-about-text">
+                                    <div className="creator-about-heading">
+                                        <h2>About - Jane Cooper</h2>
+                                        <div />
+                                    </div>
+                                    <div className="creator-about-description">
+                                        <p>Lorem ipsum dolor sit amet consectetur. Viverra egestas scelerisque viverra consectetur id bibendum eu. Cum at lorem pulvinar purus quam etiam non varius cursus. Purus id proin tristique venenatis. Condimentum lectus lectus ut vivamus. Gravida enim et augue sed.</p>
+                                    </div>
+                                    <div className="creator-about-heading">
+                                        <h2>Services offered</h2>
+                                        <div />
+                                    </div>
+                                    <div className="creator-about-description">
+                                        <p>Lorem ipsum dolor sit amet consectetur. Viverra egestas scelerisque viverra consectetur id bibendum eu. Cum at lorem pulvinar purus quam etiam non varius cursus. Purus id proin tristique venenatis. Condimentum lectus lectus ut vivamus. Gravida enim et augue sed.</p>
+
+                                        <li>Doodle Design</li>
+                                        <li>Brochure Design</li>
+                                        <li>Photo Editing</li>
+                                        <li>Costume Design</li>
+
+                                    </div>
+                                    <div className="creator-about-heading">
+                                        <h2>Working Style</h2>
+                                        <div />
+                                    </div>
+                                    <div className="creator-about-description">
+                                        <p>Lorem ipsum dolor sit amet consectetur. Viverra egestas scelerisque viverra consectetur id bibendum eu. Cum at lorem pulvinar purus quam etiam non varius cursus. Purus id proin tristique venenatis. Condimentum lectus lectus ut vivamus. Gravida enim et augue sed.</p>
+                                    </div>
+                                </div>
+                                <div className="creator-about-cards-container">
+                                    <div className="creator-card">
+                                        <h3 className='creator-card-heading'>Pricing</h3>
+                                        <div className="creator-service-grid">
+
+                                            <p className="creator-service-name">Service Name</p>
+                                            <p className="creator-price">₹ 1,000 /Day</p>
+                                            <p className="creator-service-name">Service Name</p>
+                                            <p className="creator-price">₹ 1,000 /Day</p>
+                                            <p className="creator-service-name">Service Name</p>
+                                            <p className="creator-price">₹ 1,000 /Day</p>
+                                        </div>
+                                    </div>
+                                    <div className="creator-card">
+                                        <h3 className='creator-card-heading'>Contact info</h3>
+                                        <div className="creator-address">
+                                            <img src={location} alt="" />
+                                            <div>Mahalakshmi Nagar, Bangalore Karnataka</div>
+                                        </div>
+                                        <div className="creator-contact-btn-container">
+                                            <button className='yellow-btn creator-contact-btn'><img src={mail} alt="" />View Email</button>
+                                            <button className='yellow-btn creator-contact-btn'><img src={phone} alt="" />View Contact</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="creator-card">
-                                <h3 className='creator-card-heading'>Contact info</h3>
-                                <div className="creator-address">
-                                    <img src={location} alt="" />
-                                    <div>Mahalakshmi Nagar, Bangalore Karnataka</div>
-                                </div>
-                                <div className="creator-contact-btn-container">
-                                <button className='yellow-btn creator-contact-btn'><img src={mail} alt="" />View Email</button>
-                                <button className='yellow-btn creator-contact-btn'><img src={phone} alt="" />View Contact</button>
+                        )}
+                        {item === 'portfolio' && (
+                            <div className="creator-portfolio-container">
+                                <div className="creator-portfolio-card"></div>
+                                <div className="creator-portfolio-card"></div>
+                                <div className="creator-portfolio-card"></div>
+                                <div className="creator-portfolio-card"></div>
+                                <div className="creator-portfolio-card"></div>
+                                <div className="creator-portfolio-card"></div>
+                                <div className="creator-portfolio-card"></div>
+                                <div className="creator-portfolio-card"></div>
+                                <div className="creator-portfolio-card"></div>
+                            </div>
+                        )}
+                        {item === 'reviews' && (
+                            <div className="creator-reviews-container">
+                                <div className="creator-reviews-main">
+                                    <div className="creator-reviews-left">
+                                        {Reviews.map((element=>{
+                                            const {id, name, time, platform,dp, subtext}=element
+                                            return(
+                                                <div className="creator-review-card">
+                                                    <div className="creator-review-card-header">
+                                                        <img className='creator-review-dp' src={dp} alt="" />
+                                                        <div className="creator-review-card-name-time">
+                                                            <h3>{name}</h3>
+                                                            <p>{time}</p>
+                                                        </div>
+                                                        <img className='creator-review-platform' src={platform} alt="" />
+                                                    </div>
+                                                    <div className="creator-review-card-subtext">
+                                                        {subtext}
+                                                    </div>
+
+                                                </div>
+                                            )
+                                        }))}
+                                    </div>
+                                    <div className="creator-reviews-right">
+                                            <div className="creator-card">
+                                                <h3 className="creator-card-heading">Rating distribution</h3>
+                                                <div className="rating-distribution">
+                                                    <p className='rating-no'>5.0</p>
+                                                    <img src={star} alt="" />
+                                                    <div className="rating-bar">
+                                                        <div className="rating-bar-filled r5"></div>
+                                                    </div>
+                                                    <p className='no-of-rating'>52 reviews</p>
+                                                </div>
+                                                <div className="rating-distribution">
+                                                    <p className='rating-no'>4.0</p>
+                                                    <img src={star} alt="" />
+                                                    <div className="rating-bar">
+                                                        <div className="rating-bar-filled r4"></div>
+                                                    </div>
+                                                    <p className='no-of-rating'>52 reviews</p>
+                                                </div>
+                                                <div className="rating-distribution">
+                                                    <p className='rating-no'>3.0</p>
+                                                    <img src={star} alt="" />
+                                                    <div className="rating-bar">
+                                                        <div className="rating-bar-filled r3"></div>
+                                                    </div>
+                                                    <p className='no-of-rating'>52 reviews</p>
+                                                </div>
+                                                <div className="rating-distribution">
+                                                    <p className='rating-no'>2.0</p>
+                                                    <img src={star} alt="" />
+                                                    <div className="rating-bar">
+                                                        <div className="rating-bar-filled r2"></div>
+                                                    </div>
+                                                    <p className='no-of-rating'>52 reviews</p>
+                                                </div>
+                                                <div className="rating-distribution">
+                                                    <p className='rating-no'>1.0</p>
+                                                    <img src={star} alt="" />
+                                                    <div className="rating-bar">
+                                                        <div className="rating-bar-filled r1"></div>
+                                                    </div>
+                                                    <p className='no-of-rating'>52 reviews</p>
+                                                </div>
+                                            </div>
+                                            <div className="creator-card">
+                                                <h3 className="creator-card-heading">Write your review</h3>
+                                            </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        )}
                     </div>
                 </div>
             </div>
